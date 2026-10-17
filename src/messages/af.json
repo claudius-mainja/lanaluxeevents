@@ -1,0 +1,82 @@
+{
+  "common": {
+    "skipToContent": "Slaan oor na hoofinhoud",
+    "getQuote": "Kry 'n kwotasie",
+    "browseHire": "Blaai deur huur",
+    "viewDetails": "Sien besonderhede",
+    "enquire": "Vra oor hierdie",
+    "enquireNow": "Vra nou",
+    "call": "Skakel",
+    "email": "E-pos",
+    "menu": "Kieslys",
+    "close": "Maak toe",
+    "reset": "Herstel"
+  },
+  "nav": {
+    "home": "Tuis",
+    "hire": "Huur",
+    "collection": "Versameling",
+    "packages": "Pakette",
+    "gallery": "Galery",
+    "about": "Oor ons",
+    "contact": "Kontak",
+    "serviceAreas": "Diensareas",
+    "faqs": "Vrae"
+  },
+  "categories": {
+    "softPlay": "Sagte speel",
+    "jumpingCastles": "Springkastele",
+    "partyFun": "Partytjievermaak",
+    "packages": "Pakette",
+    "bubbleHouse": "Borrelhuis",
+    "nurseryDecor": "Dekor & Babasjower"
+  },
+  "a11y": {
+    "title": "Taal en toeganklikheid",
+    "languageHeading": "Taal",
+    "textSizeHeading": "Teksgrootte",
+    "textSizeDefault": "Verstek",
+    "textSizeLarge": "Groot",
+    "textSizeXLarge": "Ekstra groot",
+    "motionHeading": "Beweging",
+    "motionReduced": "Verminder beweging",
+    "resetAll": "Herstel alle instellings"
+  },
+  "form": {
+    "firstName": "Voornaam",
+    "suburb": "Voorstad",
+    "otherSuburb": "Ander voorstad",
+    "eventDate": "Datum van geleentheid",
+    "dateNotDecided": "Datum nog nie besluit nie",
+    "notes": "Notas",
+    "callback": "Terugbelnommer",
+    "continue": "Gaan voort na WhatsApp",
+    "selectedItem": "Gekose huur",
+    "chooseItem": "Kies 'n huuritem",
+    "copyEnquiry": "Kopieer navraag",
+    "errors": {
+      "firstNameRequired": "Voer asseblief jou voornaam in.",
+      "suburbRequired": "Kies asseblief jou area.",
+      "otherSuburbRequired": "Tik asseblief jou voorstad.",
+      "dateRequired": "Kies 'n datum, of kies “Datum nog nie besluit nie”.",
+      "dateInvalid": "Kies vandag of 'n toekomstige datum.",
+      "callbackInvalid": "Voer asseblief 'n geldige telefoonnommer in."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Sagte speel en springkasteelhuur in Johannesburg en Pretoria",
+      "lead": "Sagte speel, springkastele en partytjievermaak vir vrolike vieringe. Vertel ons jou datum en voorstad, en ons help jou kies jou opstelling."
+    }
+  },
+  "footer": {
+    "hireHeading": "Huur",
+    "companyHeading": "Verken",
+    "areasHeading": "Diensareas",
+    "contactHeading": "Kontak"
+  },
+  "notFound": {
+    "heading": "Ons kon nie daardie bladsy kry nie",
+    "lead": "Die skakel is dalk oud, of die bladsy het verskuif."
+  }
+}

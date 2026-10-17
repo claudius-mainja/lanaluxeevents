@@ -1,0 +1,74 @@
+{
+  "common": {
+    "skipToContent": "Ega go diteng tše bohlokwa",
+    "getQuote": "Hwetša theko",
+    "browseHire": "Leba dihirišo",
+    "viewDetails": "Leba dintlha",
+    "enquire": "Botšiša ka se",
+    "enquireNow": "Botšiša bjale",
+    "call": "Letša mogala",
+    "email": "Imeile",
+    "menu": "Lenaneo",
+    "close": "Tswalela",
+    "reset": "Setolla gape"
+  },
+  "nav": {
+    "home": "Legae",
+    "hire": "Hirišo",
+    "collection": "Kgoboketšo",
+    "packages": "Diphakethe",
+    "gallery": "Kaleri",
+    "about": "Ka ga rena",
+    "contact": "Ikgokaganye le rena",
+    "serviceAreas": "Mafelo a tirelo",
+    "faqs": "Dipotšišo"
+  },
+  "categories": {
+    "softPlay": "Papadi e bonolo",
+    "jumpingCastles": "Dikagole tša go tlelaka",
+    "partyFun": "Boithabišo bja mokete",
+    "packages": "Diphakethe",
+    "bubbleHouse": "Ntlo ya mabu",
+    "nurseryDecor": "Kgabišo"
+  },
+  "a11y": {
+    "title": "Polelo le phihlelelo",
+    "languageHeading": "Polelo",
+    "textSizeHeading": "Bogolo bja sengwalo",
+    "textSizeDefault": "Tlhago",
+    "textSizeLarge": "Kgolo",
+    "textSizeXLarge": "Kgolo kudu",
+    "motionHeading": "Mosepelo",
+    "motionReduced": "Fokotša mosepelo",
+    "resetAll": "Setolla gape ka moka"
+  },
+  "form": {
+    "firstName": "Leina la pele",
+    "suburb": "Lokishi",
+    "otherSuburb": "Lokishi le lengwe",
+    "eventDate": "Letšatši la tiragalo",
+    "dateNotDecided": "Letšatši ga se la swarwa",
+    "notes": "Dintlha",
+    "callback": "Nomoro ya go fetola mogala",
+    "continue": "Tšwela pele go WhatsApp",
+    "selectedItem": "Sekgethwa se hirilwego",
+    "chooseItem": "Kgetha selo sa go hirišwa",
+    "copyEnquiry": "Kopiša potšišo"
+  },
+  "home": {
+    "hero": {
+      "title": "Hirišo ya papadi e bonolo le dikagole tša go tlelaka Johannesburg le Pretoria",
+      "lead": "Papadi e bonolo, dikagole tša go tlelaka le boithabišo bja mokete bakeng sa meletlo e thabisago. Re botše letšatši le lokishi la gago, gomme re tla go thuša go kgetha peakanyo ya gago."
+    }
+  },
+  "footer": {
+    "hireHeading": "Hirišo",
+    "companyHeading": "Nyakišiša",
+    "areasHeading": "Mafelo a tirelo",
+    "contactHeading": "Ikgokaganye le rena"
+  },
+  "notFound": {
+    "heading": "Ga se ra hwetša lephephe leo",
+    "lead": "Kgokaganyo e ka ba e fetile nako, goba lephephe le hudugile."
+  }
+}

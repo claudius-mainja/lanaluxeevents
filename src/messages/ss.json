@@ -1,0 +1,74 @@
+{
+  "common": {
+    "skipToContent": "Dlula emkhatsini webantfu labalulekile",
+    "getQuote": "Tfola sintfeko",
+    "browseHire": "Buka kuhiri",
+    "viewDetails": "Buka imininingwane",
+    "enquire": "Butsa ngaloku",
+    "enquireNow": "Butsa nyalo",
+    "call": "Shaya licingo",
+    "email": "I-imeyili",
+    "menu": "Imenyu",
+    "close": "Vala",
+    "reset": "Setha kabusha"
+  },
+  "nav": {
+    "home": "Likhaya",
+    "hire": "Kuhiri",
+    "collection": "Liqoqo",
+    "packages": "Emaphakethe",
+    "gallery": "Igalari",
+    "about": "Mayelana natsi",
+    "contact": "Tfutsela natsi",
+    "serviceAreas": "Tindzawo tesevisi",
+    "faqs": "Imibuto"
+  },
+  "categories": {
+    "softPlay": "Kudlala lokuthambile",
+    "jumpingCastles": "Tinqaba tekugxuma",
+    "partyFun": "Bumnandi bephathi",
+    "packages": "Emaphakethe",
+    "bubbleHouse": "Indlu yemabhamuza",
+    "nurseryDecor": "Umhlobiso"
+  },
+  "a11y": {
+    "title": "Lulwimi nekufinyeleleka",
+    "languageHeading": "Lulwimi",
+    "textSizeHeading": "Bungako belithemba",
+    "textSizeDefault": "Lokumisiwe",
+    "textSizeLarge": "Kukhulu",
+    "textSizeXLarge": "Kukhulu kakhulu",
+    "motionHeading": "Kunyakata",
+    "motionReduced": "Nciphisa kunyakata",
+    "resetAll": "Setha kabusha konkhe"
+  },
+  "form": {
+    "firstName": "Libito lekucala",
+    "suburb": "Ilokishi",
+    "otherSuburb": "Lelinye ilokishi",
+    "eventDate": "Lusuku lwemcimbi",
+    "dateNotDecided": "Lusuku alukanqunywa",
+    "notes": "Emanothi",
+    "callback": "Inombolo yekushaya",
+    "continue": "Chubeka ku-WhatsApp",
+    "selectedItem": "Lokuhiriwe lokukhetšiwe",
+    "chooseItem": "Khetsa into yekuhira",
+    "copyEnquiry": "Kopisha umbuto"
+  },
+  "home": {
+    "hero": {
+      "title": "Kuhira kudlala lokuthambile netinqaba tekugxuma eJohannesburg nasePitoli",
+      "lead": "Kudlala lokuthambile, tinqaba tekugxuma nebumnandi bephathi emikhosini lejabulisako. Sitshele lusuku lwakho nelokishi, sitakusita ukhetsa kuhlela kwakho."
+    }
+  },
+  "footer": {
+    "hireHeading": "Kuhiri",
+    "companyHeading": "Hlola",
+    "areasHeading": "Tindzawo tesevisi",
+    "contactHeading": "Tfutsela natsi"
+  },
+  "notFound": {
+    "heading": "Asikwazanga kutfola lelo khasi",
+    "lead": "Kungenzeka sikhombandlela sidzala, noma likhasi lisusiwe."
+  }
+}

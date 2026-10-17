@@ -1,0 +1,82 @@
+{
+  "common": {
+    "skipToContent": "Yeqa kumxholo oyintloko",
+    "getQuote": "Fumana ixabiso",
+    "browseHire": "Khangela ukuqesha",
+    "viewDetails": "Jonga iinkcukacha",
+    "enquire": "Buza ngaloku",
+    "enquireNow": "Buza ngoku",
+    "call": "Tsalela umnxeba",
+    "email": "I-imeyile",
+    "menu": "Imenyu",
+    "close": "Vala",
+    "reset": "Seta kwakhona"
+  },
+  "nav": {
+    "home": "Ikhaya",
+    "hire": "Ukuqesha",
+    "collection": "Ingqokelela",
+    "packages": "Iipakethi",
+    "gallery": "Igalari",
+    "about": "Ngathi",
+    "contact": "Qhagamshelana nathi",
+    "serviceAreas": "Iindawo zenkonzo",
+    "faqs": "Imibuzo"
+  },
+  "categories": {
+    "softPlay": "Ukudlala okuthambileyo",
+    "jumpingCastles": "Iinqaba zokutsiba",
+    "partyFun": "Ulonwabo lwepati",
+    "packages": "Iipakethi",
+    "bubbleHouse": "Indlu yamaqamza",
+    "nurseryDecor": "Umhombiso"
+  },
+  "a11y": {
+    "title": "Ulwimi nokufikeleleka",
+    "languageHeading": "Ulwimi",
+    "textSizeHeading": "Ubungakanani bombhalo",
+    "textSizeDefault": "Okumiselweyo",
+    "textSizeLarge": "Enkulu",
+    "textSizeXLarge": "Enkulu kakhulu",
+    "motionHeading": "Ukushukuma",
+    "motionReduced": "Nciphisa ukushukuma",
+    "resetAll": "Seta kwakhona konke"
+  },
+  "form": {
+    "firstName": "Igama lokuqala",
+    "suburb": "Ilokishi",
+    "otherSuburb": "Elinye ilokishi",
+    "eventDate": "Umhla womsitho",
+    "dateNotDecided": "Umhla awukagqitywa",
+    "notes": "Amanqaku",
+    "callback": "Inombolo yokufowuna",
+    "continue": "Qhubeka kwi-WhatsApp",
+    "selectedItem": "Into eqeshiweyo ekhethiweyo",
+    "chooseItem": "Khetha into yokuqesha",
+    "copyEnquiry": "Kopa umbuzo",
+    "errors": {
+      "firstNameRequired": "Nceda faka igama lakho lokuqala.",
+      "suburbRequired": "Nceda khetha indawo yakho.",
+      "otherSuburbRequired": "Nceda bhala ilokishi lakho.",
+      "dateRequired": "Khetha umhla, okanye ukhethe “Umhla awukagqitywa”.",
+      "dateInvalid": "Khetha umhla wanamhlanje okanye wexesha elizayo.",
+      "callbackInvalid": "Nceda faka inombolo yefowuni esebenzayo."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Ukudlala okuthambileyo nokuqeshwa kweenqaba zokutsiba eRhawutini nasePitoli",
+      "lead": "Ukudlala okuthambileyo, iinqaba zokutsiba nolonwabo lwepati kwiimbhiwo ezonwabisayo. Sixelele umhla wakho kunye nelokishi, siza kukunceda ukhethe ulungiselelo lwakho."
+    }
+  },
+  "footer": {
+    "hireHeading": "Ukuqesha",
+    "companyHeading": "Hlola",
+    "areasHeading": "Iindawo zenkonzo",
+    "contactHeading": "Qhagamshelana nathi"
+  },
+  "notFound": {
+    "heading": "Asikwazanga ukufumana elo phepha",
+    "lead": "Kusenokwenzeka ikhonkco liphelelwe lixesha, okanye iphepha lifudusiwe."
+  }
+}

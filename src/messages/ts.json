@@ -1,0 +1,74 @@
+{
+  "common": {
+    "skipToContent": "Dlula eka leswi nga ngopfu",
+    "getQuote": "Kuma nxavo",
+    "browseHire": "Languta vuhiri",
+    "viewDetails": "Vona vuxokoxoko",
+    "enquire": "Vutisa hi leswi",
+    "enquireNow": "Vutisa sweswi",
+    "call": "Fona",
+    "email": "Imeyili",
+    "menu": "Meniyu",
+    "close": "Pfala",
+    "reset": "Seta nakambe"
+  },
+  "nav": {
+    "home": "Kaya",
+    "hire": "Ku hira",
+    "collection": "Ntlhokomelo",
+    "packages": "Maphakete",
+    "gallery": "Galeri",
+    "about": "Hi tsala",
+    "contact": "Tihlanganise na hina",
+    "serviceAreas": "Tindhawu ta vukorhokeri",
+    "faqs": "Swivutiso"
+  },
+  "categories": {
+    "softPlay": "Ntlangano wo olova",
+    "jumpingCastles": "Tinhonga to tlula",
+    "partyFun": "Ntsako wa pati",
+    "packages": "Maphakete",
+    "bubbleHouse": "Yindlu ya bubble",
+    "nurseryDecor": "Xihlawulekisi"
+  },
+  "a11y": {
+    "title": "Ririmi na ku fikelela",
+    "languageHeading": "Ririmi",
+    "textSizeHeading": "Lexitiyelo ra matsalwa",
+    "textSizeDefault": "Lexi tolovelekeke",
+    "textSizeLarge": "Lerikulu",
+    "textSizeXLarge": "Lerikulu ngopfu",
+    "motionHeading": "Ku famba",
+    "motionReduced": "Dzikisa ku famba",
+    "resetAll": "Seta nakambe hinkwaswo"
+  },
+  "form": {
+    "firstName": "Vito ro sungula",
+    "suburb": "Lokixi",
+    "otherSuburb": "Lokixi lerin'wana",
+    "eventDate": "Siku ra nkhuvo",
+    "dateNotDecided": "Siku a ri si tiveki",
+    "notes": "Matsalwa",
+    "callback": "Nomboro yo fonela",
+    "continue": "Yisa emahlweni eka WhatsApp",
+    "selectedItem": "Xilo lexi hirekiweke lexi hlawuriweke",
+    "chooseItem": "Hlawula xilo xo hira",
+    "copyEnquiry": "Kopa xivutiso"
+  },
+  "home": {
+    "hero": {
+      "title": "Ku hira ntlangano wo olova na tinhonga to tlula eJohannesburg na Pretoria",
+      "lead": "Ntlangano wo olova, tinhonga to tlula na ntsako wa pati eka minkhuvo yo tsakisa. Hi byele siku na lokixi ra wena, hi ta ku pfuna ku hlawula makungu ya wena."
+    }
+  },
+  "footer": {
+    "hireHeading": "Ku hira",
+    "companyHeading": "Kambisisa",
+    "areasHeading": "Tindhawu ta vukorhokeri",
+    "contactHeading": "Tihlanganise na hina"
+  },
+  "notFound": {
+    "heading": "A hi kumanga tluka leri",
+    "lead": "Xihlanganiso xi nga hava nkarhi, kumbe tluka ri cukumetiwe."
+  }
+}

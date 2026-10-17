@@ -1,0 +1,82 @@
+{
+  "common": {
+    "skipToContent": "Yeqela kokuqukethwe okuyinhloko",
+    "getQuote": "Thola isilinganiso",
+    "browseHire": "Phequlula ukuqasha",
+    "viewDetails": "Buka imininingwane",
+    "enquire": "Buza ngalokhu",
+    "enquireNow": "Buza manje",
+    "call": "Shayela ucingo",
+    "email": "I-imeyili",
+    "menu": "Imenyu",
+    "close": "Vala",
+    "reset": "Setha kabusha"
+  },
+  "nav": {
+    "home": "Ikhaya",
+    "hire": "Ukuqasha",
+    "collection": "Iqoqo",
+    "packages": "Amaphakethe",
+    "gallery": "Igalari",
+    "about": "Mayelana nathi",
+    "contact": "Xhumana nathi",
+    "serviceAreas": "Izindawo zesevisi",
+    "faqs": "Imibuzo"
+  },
+  "categories": {
+    "softPlay": "Ukudlala okuthambile",
+    "jumpingCastles": "Izinqaba zokugxuma",
+    "partyFun": "Ubumnandi bephathi",
+    "packages": "Amaphakethe",
+    "bubbleHouse": "Indlu yamabhamuza",
+    "nurseryDecor": "Umhlobiso"
+  },
+  "a11y": {
+    "title": "Ulimi nokufinyeleleka",
+    "languageHeading": "Ulimi",
+    "textSizeHeading": "Usayizi wombhalo",
+    "textSizeDefault": "Okumisiwe",
+    "textSizeLarge": "Kukhulu",
+    "textSizeXLarge": "Kukhulu kakhulu",
+    "motionHeading": "Ukunyakaza",
+    "motionReduced": "Nciphisa ukunyakaza",
+    "resetAll": "Setha kabusha konke"
+  },
+  "form": {
+    "firstName": "Igama lokuqala",
+    "suburb": "Ilokishi",
+    "otherSuburb": "Elinye ilokishi",
+    "eventDate": "Usuku lomcimbi",
+    "dateNotDecided": "Usuku alukanqunywa",
+    "notes": "Amanothi",
+    "callback": "Inombolo yokushaya",
+    "continue": "Qhubeka ku-WhatsApp",
+    "selectedItem": "Okuqashiwe okukhethiwe",
+    "chooseItem": "Khetha into yokuqasha",
+    "copyEnquiry": "Kopisha umbuzo",
+    "errors": {
+      "firstNameRequired": "Sicela ufake igama lakho lokuqala.",
+      "suburbRequired": "Sicela ukhethe indawo yakho.",
+      "otherSuburbRequired": "Sicela ubhale ilokishi lakho.",
+      "dateRequired": "Khetha usuku, noma ukhethe “Usuku alukanqunywa”.",
+      "dateInvalid": "Khetha usuku lwanamuhla noma lwesikhathi esizayo.",
+      "callbackInvalid": "Sicela ufake inombolo yocingo evumelekile."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Ukudlala okuthambile nokuqashwa kwezinqaba zokugxuma eJohannesburg nasePitoli",
+      "lead": "Ukudlala okuthambile, izinqaba zokugxuma nobumnandi bephathi emikhosini ejabulisayo. Sitshele usuku lwakho nedolobha, sizokusiza ukhethe ukuhlelwa kwakho."
+    }
+  },
+  "footer": {
+    "hireHeading": "Ukuqasha",
+    "companyHeading": "Hlola",
+    "areasHeading": "Izindawo zesevisi",
+    "contactHeading": "Xhumana nathi"
+  },
+  "notFound": {
+    "heading": "Asikwazanga ukuthola lelo khasi",
+    "lead": "Kungenzeka isixhumanisi sidala, noma ikhasi lisusiwe."
+  }
+}

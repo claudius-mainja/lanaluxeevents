@@ -1,0 +1,74 @@
+{
+  "common": {
+    "skipToContent": "Dlula uye emahlathini abalulekileko",
+    "getQuote": "Fumana ixabiso",
+    "browseHire": "Bheka ukuqatjha",
+    "viewDetails": "Bheka iinkcukacha",
+    "enquire": "Buza ngalokhu",
+    "enquireNow": "Buza nje",
+    "call": "Tsaya umrhala",
+    "email": "I-imeyili",
+    "menu": "Imenu",
+    "close": "Vala",
+    "reset": "Beka kabusha"
+  },
+  "nav": {
+    "home": "Umuzi",
+    "hire": "Ukuqatjha",
+    "collection": "Iqoqo",
+    "packages": "Amaphakethe",
+    "gallery": "Igalari",
+    "about": "Ngezethu",
+    "contact": "Hlangana nathi",
+    "serviceAreas": "Iindawo zomsebenzi",
+    "faqs": "Imibuzo"
+  },
+  "categories": {
+    "softPlay": "Ukudlala okuthambileko",
+    "jumpingCastles": "Iinqaba zokugxuma",
+    "partyFun": "Ubumnandi bephathi",
+    "packages": "Amaphakethe",
+    "bubbleHouse": "Indlu yebhamuza",
+    "nurseryDecor": "Umhlobiso"
+  },
+  "a11y": {
+    "title": "Ilimi nokufinyeleleka",
+    "languageHeading": "Ilimi",
+    "textSizeHeading": "Ubukhulu bomthetho",
+    "textSizeDefault": "Okumisiweko",
+    "textSizeLarge": "Kukhulu",
+    "textSizeXLarge": "Kukhulu kakhulu",
+    "motionHeading": "Ukunyakatjha",
+    "motionReduced": "Nciphisa ukunyakatjha",
+    "resetAll": "Beka kabusha koke"
+  },
+  "form": {
+    "firstName": "Ibizo lokuqala",
+    "suburb": "Ilokishi",
+    "otherSuburb": "Elinye ilokishi",
+    "eventDate": "Ilanga lomcimbi",
+    "dateNotDecided": "Ilanga alikanqunjelwa",
+    "notes": "Amanothi",
+    "callback": "Inombolo yokuthelefona",
+    "continue": "Rhweba ku-WhatsApp",
+    "selectedItem": "Into eqatjhweko ekhethiweko",
+    "chooseItem": "Khetha into yokuqatjha",
+    "copyEnquiry": "Kopisha umbuzo"
+  },
+  "home": {
+    "hero": {
+      "title": "Ukuqatjha ukudlala okuthambileko neenqaba zokugxuma eJohannesburg nasePitoli",
+      "lead": "Ukudlala okuthambileko, iinqaba zokugxuma nobumnandi bephathi emikhosini ethabisako. Sitshele ilanga lakho nelokishi, sizakusiza ukhetha ukuhlelwa kwakho."
+    }
+  },
+  "footer": {
+    "hireHeading": "Ukuqatjha",
+    "companyHeading": "Hlola",
+    "areasHeading": "Iindawo zomsebenzi",
+    "contactHeading": "Hlangana nathi"
+  },
+  "notFound": {
+    "heading": "Asikwazanga ukuthola likhasi lelo",
+    "lead": "Isixhumanisi kungenzeka sidala, namkha likhasi lisusiwe."
+  }
+}

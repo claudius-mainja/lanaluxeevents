@@ -1,0 +1,74 @@
+{
+  "common": {
+    "skipToContent": "Feta ho ea ho litaba tsa mantlha",
+    "getQuote": "Fumana theko",
+    "browseHire": "Sheba ho hira",
+    "viewDetails": "Sheba lintlha",
+    "enquire": "Botsa ka sena",
+    "enquireNow": "Botsa hona joale",
+    "call": "Letsa mohala",
+    "email": "Imeile",
+    "menu": "Lenane",
+    "close": "Kwala",
+    "reset": "Seta bocha"
+  },
+  "nav": {
+    "home": "Lehae",
+    "hire": "Ho hira",
+    "collection": "Pokello",
+    "packages": "Lipachete",
+    "gallery": "Khalari",
+    "about": "Mabapi le rona",
+    "contact": "Ikgokahanye le rona",
+    "serviceAreas": "Libaka tsa tshebeletso",
+    "faqs": "Lipotso"
+  },
+  "categories": {
+    "softPlay": "Papali e bonolo",
+    "jumpingCastles": "Liqhobosheane tsa ho tlola",
+    "partyFun": "Boithabiso ba mokete",
+    "packages": "Lipachete",
+    "bubbleHouse": "Ntlo ea bubble",
+    "nurseryDecor": "Mokhabiso"
+  },
+  "a11y": {
+    "title": "Puo le phihlello",
+    "languageHeading": "Puo",
+    "textSizeHeading": "Boholo ba mongolo",
+    "textSizeDefault": "Tlwaelo",
+    "textSizeLarge": "Kholo",
+    "textSizeXLarge": "Kholo haholo",
+    "motionHeading": "Ho sisinyeha",
+    "motionReduced": "Fokotsa ho sisinyeha",
+    "resetAll": "Seta bocha tsohle"
+  },
+  "form": {
+    "firstName": "Lebitso la pele",
+    "suburb": "Toropo e nyane",
+    "otherSuburb": "Toropo e nngwe",
+    "eventDate": "Letsatsi la ketsahalo",
+    "dateNotDecided": "Letsatsi ha le so nkuwe",
+    "notes": "Lintlha",
+    "callback": "Nomoro ea ho khutlisa mohala",
+    "continue": "Tsoela pele ho WhatsApp",
+    "selectedItem": "Ntho e hiriloeng e khethiloeng",
+    "chooseItem": "Khetha ntho ea ho hira",
+    "copyEnquiry": "Kopitsa potso"
+  },
+  "home": {
+    "hero": {
+      "title": "Ho hira papali e bonolo le liqhobosheane tsa ho tlola Johannesburg le Pretoria",
+      "lead": "Papali e bonolo, liqhobosheane tsa ho tlola le boithabiso ba mokete bakeng sa mekete e thabisang. Re bolelle letsatsi le toropo ea hau, 'me re tla u thusa ho khetha tlhophiso ea hau."
+    }
+  },
+  "footer": {
+    "hireHeading": "Ho hira",
+    "companyHeading": "Hlahloba",
+    "areasHeading": "Libaka tsa tshebeletso",
+    "contactHeading": "Ikgokahanye le rona"
+  },
+  "notFound": {
+    "heading": "Ha rea fumana leqephe leo",
+    "lead": "Sehokelo se kanna sa felloa ke nako, kapa leqephe le fallisitsoe."
+  }
+}

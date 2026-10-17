@@ -1,0 +1,583 @@
+{
+  "meta": {
+    "home": {
+      "title": "Soft Play & Party Hire Johannesburg | Lana Luxe Events",
+      "description": "Soft play, jumping castles and party fun for children's celebrations across Johannesburg, Pretoria, Sandton and Midrand. Send your date and suburb for availability and a quote."
+    },
+    "collection": {
+      "title": "Party Hire Collection & Prices | Lana Luxe Events",
+      "description": "Browse Lana Luxe Events' full party hire collection — soft play, jumping castles, party fun and packages — with prices and inclusions, then enquire about your date."
+    },
+    "softPlay": {
+      "title": "Soft Play Hire Johannesburg & Pretoria | Lana Luxe Events",
+      "description": "Hire all-white soft play for children's parties in Johannesburg, Pretoria and surrounding areas. See what's included and the price, then enquire about your date."
+    },
+    "jumpingCastles": {
+      "title": "Jumping Castle Hire Johannesburg | Lana Luxe Events",
+      "description": "Compare jumping castle options — classic, white dome, and castle with table and chairs — for parties in Johannesburg and Pretoria. Check prices and ask about your date."
+    },
+    "partyFun": {
+      "title": "Party Fun Hire: Candy Cart, Popcorn & Slush | Lana Luxe Events",
+      "description": "Add candy carts, popcorn, slush and candy floss to your celebration. Party fun hire across Johannesburg and Pretoria with prices listed. Enquire about your date."
+    },
+    "packages": {
+      "title": "Kids Party Hire Packages | Lana Luxe Events",
+      "description": "Kids Party Combo packages combine play and party essentials, priced by guest number, across Johannesburg and Pretoria. Request a quote for your date and suburb."
+    },
+    "bubbleHouse": {
+      "title": "Bubble House Hire Johannesburg | Lana Luxe Events",
+      "description": "Hire a clear bubble house styled with balloons for celebrations in Johannesburg and Pretoria. See the options and inclusions, then enquire about your date."
+    },
+    "gallery": {
+      "title": "Party Hire Gallery | Lana Luxe Events",
+      "description": "Browse photographs of Lana Luxe Events' soft play, jumping castles and event styling. Find ideas, then enquire about the related setup for your celebration."
+    },
+    "services": {
+      "title": "Wedding Décor & Planning | Lana Luxe Events",
+      "description": "Luxury wedding décor, styling and planning across Johannesburg and Pretoria — tent draping, monogram backdrops, florals and full or partial coordination. Tell us about your occasion for a tailored quote."
+    },
+    "about": {
+      "title": "About Lana Luxe Events | Party Hire in Gauteng",
+      "description": "Meet Lana Luxe Events and how we hire soft play, jumping castles and party fun across Johannesburg and Pretoria — with availability and totals confirmed before anything is reserved."
+    },
+    "contact": {
+      "title": "Get a Party Hire Quote | Lana Luxe Events",
+      "description": "Choose your hire, add your event date and suburb, and continue to WhatsApp. Lana Luxe Events confirms availability, delivery and the final total for your celebration."
+    },
+    "areas": {
+      "title": "Party Hire Service Areas | Johannesburg & Pretoria",
+      "description": "Lana Luxe Events delivers party hire across Bryanston, the Sandton City area, Randburg, Pretoria, Germiston, Centurion, Midrand and the Johannesburg northern suburbs."
+    },
+    "faqs": {
+      "title": "Party Hire FAQs | Lana Luxe Events",
+      "description": "Answers about booking, delivery, setup, space and pricing for party hire with Lana Luxe Events across Johannesburg and Pretoria. Ask us anything before you confirm."
+    },
+    "privacy": {
+      "title": "Privacy Notice | Lana Luxe Events",
+      "description": "Read how Lana Luxe Events handles enquiry information, website analytics and contact through WhatsApp, and how to ask about your personal information."
+    },
+    "terms": {
+      "title": "Hire Terms | Lana Luxe Events",
+      "description": "Read Lana Luxe Events' hire terms, including the confirmed arrangements for bookings, delivery, payment and cancellations before completing your booking."
+    },
+    "notFound": {
+      "title": "Page not found | Lana Luxe Events",
+      "description": "The page you were looking for could not be found. Browse our hire, service areas or start an enquiry instead."
+    }
+  },
+  "common": {
+    "brand": "Lana Luxe Events",
+    "tagline": "Soft play, jumping castle and party fun hire",
+    "skipToContent": "Skip to main content",
+    "getQuote": "Get a Quote",
+    "browseHire": "Browse Hire",
+    "viewDetails": "View details",
+    "enquire": "Enquire about this",
+    "enquireNow": "Enquire now",
+    "viewAll": "View all",
+    "from": "from",
+    "whatsapp": "WhatsApp",
+    "call": "Call",
+    "email": "Email",
+    "whatsappNow": "Chat on WhatsApp",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "close": "Close",
+    "closeMenu": "Close menu",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "reset": "Reset",
+    "apply": "Apply",
+    "optional": "optional",
+    "imageUnavailable": "Photograph to be supplied",
+    "priceConfirmedOnQuote": "Confirmed with your quote",
+    "availabilityNote": "Availability and the final total are confirmed by the team on WhatsApp.",
+    "deliveryNote": "Delivery is quoted for your suburb.",
+    "includedHeading": "What's included",
+    "requirementsHeading": "Good to know",
+    "requirementsNote": "Space, access, electricity and setup details are confirmed with your quote.",
+    "relatedHeading": "You might also like",
+    "relatedEyebrow": "Keep exploring",
+    "backToCollection": "Back to the collection",
+    "areaConfirmNote": "We confirm delivery for your address before anything is reserved."
+  },
+  "nav": {
+    "home": "Home",
+    "hire": "Hire",
+    "collection": "Collection",
+    "packages": "Packages",
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact",
+    "eventServices": "Wedding & Planning",
+    "more": "More",
+    "serviceAreas": "Service areas",
+    "faqs": "FAQs"
+  },
+  "categories": {
+    "softPlay": "Soft Play",
+    "jumpingCastles": "Jumping Castles",
+    "partyFun": "Party Fun",
+    "packages": "Packages",
+    "bubbleHouse": "Bubble House",
+    "nurseryDecor": "Décor & Showers"
+  },
+  "a11y": {
+    "open": "Language and accessibility settings",
+    "title": "Language & accessibility",
+    "languageHeading": "Language",
+    "textSizeHeading": "Text size",
+    "textSizeDefault": "Default",
+    "textSizeLarge": "Large",
+    "textSizeXLarge": "Extra large",
+    "motionHeading": "Motion",
+    "motionDefault": "Use system setting",
+    "motionReduced": "Reduce motion",
+    "resetAll": "Reset all settings",
+    "languageNote": "Translations other than English are draft and awaiting review. The language you choose is included in your enquiry.",
+    "draftBadge": "Draft"
+  },
+  "languages": {
+    "label": "Language",
+    "change": "Change language"
+  },
+  "form": {
+    "heading": "Let's plan the play.",
+    "lead": "Tell us the essentials and we'll continue on WhatsApp. The team confirms availability, delivery and the final total — nothing is reserved until you confirm with us.",
+    "selectedItem": "Selected hire",
+    "noItemSelected": "No item selected yet — choose one below or leave it open.",
+    "chooseItem": "Choose a hire item",
+    "chooseItemPlaceholder": "Not sure yet / help me choose",
+    "firstName": "First name",
+    "firstNamePlaceholder": "Your first name",
+    "suburb": "Suburb",
+    "suburbPlaceholder": "Choose your area",
+    "otherSuburb": "Other suburb",
+    "otherSuburbPlaceholder": "Type your suburb",
+    "otherSuburbOption": "Other suburb",
+    "eventDate": "Event date",
+    "dateNotDecided": "Date not decided",
+    "notes": "Notes",
+    "notesPlaceholder": "Anything we should know? (optional)",
+    "callback": "Callback number",
+    "callbackPlaceholder": "Alternative number, if different (optional)",
+    "continue": "Continue to WhatsApp",
+    "copyEnquiry": "Copy Enquiry",
+    "copied": "Enquiry copied to your clipboard",
+    "copyFailed": "Copy did not work. Select the message below and copy it manually.",
+    "directWhatsApp": "Prefer to chat first? Message us directly on WhatsApp",
+    "messagePreview": "Your enquiry message",
+    "whatsappNote": "Opening WhatsApp does not send your message. Review the message in WhatsApp and tap send.",
+    "resetDraft": "Clear this form",
+    "preferOther": "Prefer to talk?",
+    "errors": {
+      "firstNameRequired": "Please enter your first name.",
+      "firstNameTooLong": "That name is a little long — please shorten it.",
+      "suburbRequired": "Please choose your area.",
+      "otherSuburbRequired": "Please type your suburb.",
+      "otherSuburbTooLong": "That suburb name is too long.",
+      "dateRequired": "Choose an event date, or select “Date not decided”.",
+      "dateInvalid": "Choose today or a future date.",
+      "notesTooLong": "Please keep notes under 500 characters.",
+      "callbackInvalid": "Please enter a valid phone number.",
+      "formInvalid": "Please check the highlighted fields."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Lana Luxe Events welcomes you to a",
+      "title": "Soft play, jumping castles and party fun all delivered to you.",
+      "lead": "We are your trusted partner for premium party hire across Johannesburg and Pretoria. First birthdays, gender reveals, school events or corporate fun days — we bring the bounce and the style straight to your venue.",
+      "heroAlt": "All-white soft play setup with a ball pit and soft shapes for a children's party",
+      "badge1": "First birthdays & gender reveals",
+      "badge2": "Schools & corporate fun days",
+      "badge3": "Delivered across Johannesburg & Pretoria",
+      "coverageLine": "Serving Bryanston, Sandton City area, Randburg, Pretoria, Germiston, Centurion, Midrand and the northern suburbs."
+    },
+    "proof": {
+      "heading": "A calmer way to plan the play",
+      "point1Title": "Clear options, clear prices",
+      "point1Body": "Every option is listed with its approved price so you can compare before you commit.",
+      "point2Title": "One short enquiry",
+      "point2Body": "Share your date and suburb once, and continue straight to WhatsApp to confirm the details.",
+      "point3Title": "Confirmed before anything is reserved",
+      "point3Body": "Availability, delivery and the final total are confirmed by the team — never assumed at checkout."
+    },
+    "services": {
+      "eyebrow": "Three ways to celebrate",
+      "heading": "Choose where to start",
+      "lead": "Each journey stands on its own, and they combine neatly when you want the full setup.",
+      "softPlayCta": "Explore soft play",
+      "castlesCta": "Explore castles",
+      "partyFunCta": "Explore party fun"
+    },
+    "packages": {
+      "eyebrow": "Packages",
+      "heading": "Choose a setup that brings it together",
+      "lead": "Our Kids Party Combo tiers scale with your guest list, bringing the play and party essentials into one booking.",
+      "cta": "See all packages"
+    },
+    "gallery": {
+      "eyebrow": "Gallery",
+      "heading": "See the setups",
+      "lead": "A look at the soft play, castles and styling we bring to celebrations.",
+      "cta": "View the gallery"
+    },
+    "process": {
+      "eyebrow": "How it works",
+      "heading": "From idea to setup",
+      "lead": "A short, manual process — you always know what happens next.",
+      "stepWord": "Step",
+      "step1Title": "Choose your hire",
+      "step1Body": "Browse soft play, jumping castles, party fun or a package, and pick the option that fits your celebration.",
+      "step2Title": "Share your date and suburb",
+      "step2Body": "Send one short enquiry with your event date and area. Add notes only if they help.",
+      "step3Title": "Get availability and a quote",
+      "step3Body": "The team replies on WhatsApp to confirm availability, delivery and the final total for your address.",
+      "step4Title": "Confirm with the team",
+      "step4Body": "Once you're happy with the details, you confirm directly with us. Nothing is reserved before that."
+    },
+    "footerCta": {
+      "heading": "Ready to plan the play?",
+      "lead": "Share your date and suburb, and we'll help you choose the setup that fits.",
+      "cta": "Get a Quote",
+      "secondary": "Browse hire"
+    },
+    "eventIntro": {
+      "eyebrow": "Beyond the party",
+      "heading": "Wedding décor & planning, by arrangement",
+      "lead": "We also style and coordinate weddings — white luxury tents, monogram backdrops, florals and full or partial planning. These services sit alongside our party hire.",
+      "cta": "Explore wedding & planning",
+      "badge": "Weddings"
+    },
+    "search": {
+      "eyebrow": "Find your setup",
+      "heading": "Search the full party hire collection",
+      "lead": "Search by name, or filter by category. Every result links straight to a pre-filled enquiry.",
+      "seePackages": "See all packages"
+    },
+    "statement": {
+      "eyebrow": "Why families choose us",
+      "heading": "Play areas that look as good as they play.",
+      "lead": "Every setup is described in full and priced up front, so you can plan with confidence before you enquire."
+    },
+    "categoryGrid": {
+      "eyebrow": "What we do",
+      "heading": "Choose your setup",
+      "lead": "From all-white soft play to jumping castles, party treats and styling — explore each service and enquire about your date.",
+      "softPlay": "All-white soft play for younger children.",
+      "jumpingCastles": "Classic, dome and combo castle options.",
+      "partyFun": "Candy carts, popcorn, slush and candy floss.",
+      "packages": "All-in-one Kids Party Combos by guest number.",
+      "bubbleHouse": "A clear dome styled with balloons.",
+      "nurseryDecor": "Backdrops, balloon décor and shower styling."
+    },
+    "stats": {
+      "heading": "The range at a glance",
+      "options": "Hire options",
+      "areas": "Service areas",
+      "fromLabel": "Hire options from",
+      "note": "Prices are the approved amounts and are confirmed with your quote."
+    },
+    "showcase": {
+      "eyebrow": "Setups we deliver",
+      "heading": "A closer look at our most-requested hire",
+      "lead": "Each option is shown with its full inclusions and approved price, so you can compare like with like.",
+      "cta": "View the full collection"
+    }
+  },
+  "collection": {
+    "eyebrow": "The collection",
+    "heading": "Party hire collection",
+    "browseHeading": "Search and filter the collection",
+    "lead": "Every current hire option in one place. Filter by category or search by name, then enquire about your date.",
+    "searchLabel": "Search hire",
+    "searchPlaceholder": "Search by name or category",
+    "filterLabel": "Filter by category",
+    "all": "All",
+    "resultsCount": "{count, plural, =0 {No items} one {# item} other {# items}}",
+    "noResultsTitle": "Nothing matched that search",
+    "noResultsBody": "Try a different word, or reset the filters to see the full collection.",
+    "resetFilters": "Reset filters",
+    "liveEmptyTitle": "Search to reveal the collection",
+    "liveEmptyBody": "Type a name — like soft play, castle, candy cart or a combo package — or tap a category. Matching hire options will appear here.",
+    "anchorsNote": "Looking for a specific setup? The soft play, jumping castle and party fun pages group these options by service."
+  },
+  "softPlay": {
+    "eyebrow": "Soft Play",
+    "introHeading": "A soft, styled space to play",
+    "heroTitle": "Soft Play Hire in Johannesburg & Pretoria",
+    "heroLead": "A little space for play. Soft, coordinated play areas that keep children busy and look lovely in the photographs.",
+    "intro": "Soft play gives younger children their own place to explore — climbing, sliding and tumbling on padded shapes while the grown-ups relax nearby. Our all-white setup suits bright, modern celebrations and works in a lounge, a hall or under a marquee.",
+    "itemsHeading": "Soft play options",
+    "faqHeading": "Soft play questions",
+    "spaceNote": "Tell us about your space — indoor, outdoor, or under cover — and the team will confirm what fits and any access or power needs with your quote."
+  },
+  "jumpingCastles": {
+    "eyebrow": "Jumping Castles",
+    "introHeading": "Room to bounce, space to celebrate",
+    "heroTitle": "Jumping Castle Hire in Johannesburg",
+    "heroLead": "Room to bounce, space to celebrate. Distinct castle options for children's parties, each priced and described on its own.",
+    "intro": "A jumping castle is the dependable centrepiece of a children's party. We keep our castle options distinct — a classic castle, a white dome with a roof, a bounce house on its own, or a castle paired with a table and chairs — so you can compare like with like.",
+    "itemsHeading": "Castle options",
+    "faqHeading": "Jumping castle questions",
+    "spaceNote": "Castle space, access and electricity requirements are confirmed with your quote once we know your venue and suburb."
+  },
+  "partyFun": {
+    "eyebrow": "Party Fun",
+    "introHeading": "A little more fun for the party",
+    "heroTitle": "Party Fun Hire in Johannesburg",
+    "heroLead": "Add a little more fun. Candy carts, popcorn, slush and candy floss to round out the celebration.",
+    "intro": "Party fun is the extra touch that keeps children happily occupied between the big moments. Choose a candy cart, a popcorn, slush or candy floss machine, and build a small treat corner alongside your play setup. Consumables are confirmed with your quote.",
+    "itemsHeading": "Party fun options",
+    "faqHeading": "Party fun questions",
+    "consumablesNote": "Where an option includes consumables, that is named in the item. Other treats and consumables are confirmed with your quote."
+  },
+  "packages": {
+    "eyebrow": "Packages",
+    "heroTitle": "Kids Party Hire Packages",
+    "heroLead": "Choose a setup that brings it together. Kids Party Combos scale with your guest list, combining play and party essentials in one booking.",
+    "intro": "Packages are the simplest way to cover the essentials at once. Each Kids Party Combo is priced by how many children you're expecting, so you can move up a tier without reorganising the whole celebration. The exact combination of items is confirmed with your quote.",
+    "introHeading": "How the packages work",
+    "tierHeading": "Choose your tier",
+    "tierLabel": "Each tier is priced by the number of children you're expecting.",
+    "forChildren": "Up to {count} children",
+    "tierColumn": "Tier",
+    "priceColumn": "Price",
+    "includedHeading": "What this covers",
+    "compareHeading": "Compare the tiers",
+    "compareNote": "Prices are the approved amounts for each tier. Move between tiers to see how the price changes.",
+    "preferToChoose": "Prefer to choose each item yourself?",
+    "browseCollection": "Browse the full collection"
+  },
+  "bubbleHouse": {
+    "eyebrow": "Bubble House",
+    "introHeading": "A rounded centrepiece children love",
+    "heroTitle": "Bubble House Hire",
+    "heroLead": "A rounded, look-at-me inflatable that children love to play inside — styled with balloons to suit your celebration.",
+    "intro": "The bubble house is a large, clear inflatable dome that makes a striking centrepiece. We offer it dressed with 100 balloons, finished with a balloon garland, or as a complete package. Availability is confirmed with your quote, as these setups are arranged per event.",
+    "availabilityNote": "Bubble house setups are arranged per event. The team confirms availability and delivery for your date and suburb.",
+    "itemsHeading": "Bubble house options",
+    "faqHeading": "Bubble house questions"
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "heading": "Setups and styling",
+    "lead": "Browse photographs of the setups we bring to celebrations. Filter by service and open any image to view it larger.",
+    "filterLabel": "Filter photographs",
+    "all": "All",
+    "openImage": "Open photograph larger",
+    "viewer": {
+      "close": "Close viewer",
+      "next": "Next photograph",
+      "previous": "Previous photograph",
+      "counter": "{current} of {total}"
+    },
+    "relatedLink": "Enquire about this setup"
+  },
+  "about": {
+    "eyebrow": "About",
+    "heroTitle": "About Lana Luxe Events",
+    "heroLead": "We help families across Johannesburg, Pretoria and the surrounding service areas plan the play for children's celebrations.",
+    "approachHeading": "Our approach",
+    "approachBody": "We keep things simple. You choose the hire, share your date and suburb, and we confirm the details with you directly on WhatsApp. There's no pressure and no hidden assumptions — if something doesn't fit your venue or budget, we'll tell you before you commit.",
+    "servicesHeading": "What we offer",
+    "servicesBody": "Our core hire covers soft play, jumping castles and party fun, along with packages that bring them together. Alongside that, we coordinate weddings and style wider events, bringing in specialist suppliers where a service sits outside our own equipment.",
+    "areasHeading": "Where we work",
+    "areasBody": "We serve Bryanston, the Sandton City area, Randburg, Pretoria, Germiston, Centurion, Midrand and the Johannesburg northern suburbs. Delivery is quoted for your suburb and confirmed before anything is reserved.",
+    "valuesHeading": "How we like to work",
+    "value1Title": "Honest options",
+    "value1Body": "We list what each option includes and how it's priced, and we don't dress up scope you won't actually get.",
+    "value2Title": "Confirmed, not assumed",
+    "value2Body": "Availability, delivery and totals are confirmed by the team — our website never pretends a booking is done.",
+    "value3Title": "Straightforward contact",
+    "value3Body": "One short enquiry gets you a real conversation on WhatsApp, phone or email.",
+    "ctaHeading": "Start with your date and suburb",
+    "ctaBody": "Send a short enquiry and we'll take it from there."
+  },
+  "services": {
+    "eyebrow": "Wedding décor & planning",
+    "heroTitle": "Enquire about your wedding day",
+    "heroLead": "From all-white luxury tents and monogram backdrops to full planning and day-of coordination — tell us your date and vision and we will craft a tailored proposal.",
+    "intro": "Our broader event services cover coordination and styling for weddings and special occasions. Because some elements sit outside our own equipment, the team, scope and pricing are tailored to your event and confirmed with you directly.",
+    "itemsHeading": "Event services",
+    "packagesEyebrow": "Signature investment packages",
+    "packagesHeading": "Curated wedding planning & execution",
+    "packagesLead": "Three tailored planning tiers — from full-service guidance to month-of coordination. A 40% retainer secures your date, with flexible milestone payment plans available.",
+    "inquirePackage": "Enquire about this package",
+    "addonsEyebrow": "Optional add-ons",
+    "addonsHeading": "Tailor your planning experience",
+    "addonsCta": "Add to my booking",
+    "offerEyebrow": "What we offer",
+    "offerHeading": "Décor, planning & coordination",
+    "offerLead": "Three signature offerings, each tailored to your venue, guest count and style — from statement décor to hands-on coordination.",
+    "styleEyebrow": "Recent wedding styling",
+    "styleHeading": "Décor that feels like you",
+    "styleLead": "Real setups from our wedding décor work — white luxury tents, floral monograms and soft blush receptions.",
+    "stepsEyebrow": "How we work",
+    "stepsHeading": "From enquiry to “I do”",
+    "availabilityNote": "All event services are available by arrangement. Tell us about your occasion and we'll confirm the scope, team and quote.",
+    "travelNote": "For event-service work more than 50 km from our base, an out-of-town travel fee of R4.50 per kilometre applies. This is specific to event services and is not a general party-hire delivery rate — hire delivery is quoted separately for your suburb.",
+    "ctaHeading": "Ready to enquire about wedding décor & planning?",
+    "ctaBody": "Share your date, venue and style — we respond within 24 hours with next steps and a tailored quote.",
+    "ctaSubmit": "Submit wedding enquiry"
+  },
+  "contact": {
+    "eyebrow": "Get a quote",
+    "heading": "Let's plan the play",
+    "lead": "Tell us your chosen hire, event date and suburb. Continue to WhatsApp to confirm availability, delivery and the final total.",
+    "formHeading": "Your enquiry",
+    "contactHeading": "Other ways to reach us",
+    "whatsappNote": "Prefer to start a conversation? Message us directly on WhatsApp.",
+    "nextHeading": "What happens next",
+    "next1": "You complete the short form and continue to WhatsApp.",
+    "next2": "You review the prefilled message and tap send in WhatsApp.",
+    "next3": "The team checks availability and delivery for your suburb.",
+    "next4": "You receive a quote confirming the total, and confirm if you're happy.",
+    "areasHeading": "Service coverage",
+    "responseNote": "We reply as soon as we can during working hours. Your enquiry is not a confirmed booking until the team confirms it with you."
+  },
+  "areas": {
+    "eyebrow": "Service areas",
+    "heading": "Where we deliver",
+    "lead": "We provide party hire across Johannesburg, Pretoria and the surrounding service areas listed below. Delivery is quoted for your suburb and confirmed before anything is reserved.",
+    "listHeading": "Confirmed service areas",
+    "notListedTitle": "Can't see your suburb?",
+    "notListedBody": "Our list covers our main service areas, but we may still be able to help nearby. Send your suburb in an enquiry and the team will confirm whether delivery is possible.",
+    "deliveryHeading": "About delivery",
+    "deliveryBody": "Delivery, setup and collection are quoted for your address and confirmed with your booking. We do not apply event-service travel rates to party hire — hire delivery is its own quote.",
+    "ctaHeading": "Check delivery for your suburb",
+    "ctaBody": "Share your date and suburb and we'll confirm availability.",
+    "itemsHeading": "Available in {area}",
+    "backToAreas": "All service areas"
+  },
+  "faqs": {
+    "eyebrow": "FAQs",
+    "heading": "Party hire questions",
+    "lead": "Answers to the questions we're asked most. If something isn't covered, ask us directly — we'd rather confirm than guess.",
+    "ctaHeading": "Still have a question?",
+    "ctaBody": "Send it through and we'll answer honestly.",
+    "items": {
+      "how-enquiry": {
+        "q": "How does the enquiry process work?",
+        "a": "Choose a hire option, complete the short form with your name, date and suburb, and continue to WhatsApp. You review the prefilled message and send it. The team then confirms availability, delivery and the final total."
+      },
+      "is-it-booked": {
+        "q": "Is my event booked once I send the enquiry?",
+        "a": "No. Sending an enquiry — or opening WhatsApp — does not reserve a date. Your booking is confirmed only once the team confirms availability and the details with you."
+      },
+      "delivery": {
+        "q": "Do you deliver to my area?",
+        "a": "We serve Bryanston, the Sandton City area, Randburg, Pretoria, Germiston, Centurion, Midrand and the Johannesburg northern suburbs. Delivery is quoted for your suburb. If you're nearby but not on the list, ask us and we'll check."
+      },
+      "price-basis": {
+        "q": "What is included in the price?",
+        "a": "The price shown is the approved amount for that option. What each option includes is described on its page. Delivery, and any consumables not named in the item, are confirmed with your quote."
+      },
+      "space": {
+        "q": "How much space do I need?",
+        "a": "Space, access and electricity needs depend on the item and your venue. Share the details in your enquiry and the team will confirm what's required before you commit."
+      },
+      "weather": {
+        "q": "What happens if the weather turns?",
+        "a": "Weather arrangements depend on your setup and venue. Talk to the team when you enquire and they'll explain the options for your date."
+      },
+      "setup": {
+        "q": "Do you set up and collect?",
+        "a": "Setup and collection arrangements are confirmed with your booking and quote. Tell us your venue and timings so these can be included."
+      },
+      "suburb": {
+        "q": "My suburb isn't listed — can you still help?",
+        "a": "Possibly. Our list covers our main service areas, but we may be able to help nearby. Send your suburb and we'll confirm."
+      },
+      "own-equipment": {
+        "q": "Is all the equipment your own?",
+        "a": "Our core hire covers soft play, jumping castles and party fun. Some wider event services are arranged with specialist suppliers, and we'll always be clear about which is which."
+      },
+      "languages": {
+        "q": "Can I enquire in my language?",
+        "a": "Yes — choose your preferred language and it's included in your enquiry. We'll confirm what we can support for your booking."
+      },
+      "booking-lead-time": {
+        "q": "How far in advance should I book?",
+        "a": "Popular dates fill up first, so we recommend enquiring as early as you can. Send your date and suburb and the team will confirm availability for your chosen setup before anything is reserved."
+      },
+      "delivery-cost": {
+        "q": "How is delivery priced?",
+        "a": "Delivery, setup and collection are quoted for your suburb and confirmed with your booking. Delivery is a separate line from the hire price, and the event-service travel rate does not apply to party hire."
+      },
+      "payment": {
+        "q": "How and when do I pay?",
+        "a": "Payment arrangements are confirmed with your quote. Please don't make any payment until the team has confirmed your booking with you."
+      },
+      "power-access": {
+        "q": "Do you need power, a flat surface or vehicle access?",
+        "a": "It depends on the setup and your venue. Share your space, surface and access details in the enquiry and the team will confirm what's required, including any electricity needs, before you commit."
+      },
+      "age-suitability": {
+        "q": "Which setup suits which age group?",
+        "a": "Soft play and the ball pit tend to suit younger children, while jumping castles suit older children. Tell us the ages you're expecting and the team will suggest a fit."
+      },
+      "day-of": {
+        "q": "What happens on the day of the event?",
+        "a": "Setup and collection arrangements, including timings for your venue, are confirmed with your booking. The team will explain exactly what to expect before your date."
+      },
+      "combo-contents": {
+        "q": "What's included in a Kids Party Combo?",
+        "a": "A Kids Party Combo brings the play and party essentials together into one booking, sized by the number of children. The exact combination of items is confirmed with your quote."
+      }
+    }
+  },
+  "privacy": {
+    "eyebrow": "Privacy",
+    "heading": "Privacy notice",
+    "lead": "This notice explains how we handle information when you enquire through this website.",
+    "enquiryHeading": "Enquiry information",
+    "enquiryBody": "When you complete the enquiry form, the details you enter — your first name, suburb, event date, and any optional notes or callback number — are used to build a WhatsApp message. Those details stay in your browser and are sent to us only when you choose to send the message in WhatsApp.",
+    "whatsappHeading": "WhatsApp handoff",
+    "whatsappBody": "This website does not send your enquiry automatically. The form prepares a message and opens WhatsApp, where you review and send it yourself. WhatsApp's own privacy terms apply to the conversation that follows.",
+    "analyticsHeading": "Analytics",
+    "analyticsBody": "If analytics is enabled, we record anonymous interactions such as which service pages are viewed and when an enquiry is started. We do not place your name, notes or phone number into analytics, tracking URLs or logs.",
+    "contactHeading": "Contacting us about your information",
+    "contactBody": "You can ask us about the information you have shared with us, or ask us to remove it, by contacting us using the details below.",
+    "policyNote": "This notice describes how the website and enquiry flow currently work. Further business policy details, including any statutory disclosures, are being confirmed and will be added before launch."
+  },
+  "terms": {
+    "eyebrow": "Hire terms",
+    "heading": "Hire terms",
+    "lead": "The terms below describe the arrangements we can confirm. Specific booking, delivery, payment and cancellation details are being finalised and are confirmed with every quote.",
+    "enquiryHeading": "Enquiries and confirmation",
+    "enquiryBody": "An enquiry or a WhatsApp message does not reserve a date. A booking is confirmed only once the team confirms availability and the agreed details with you.",
+    "deliveryHeading": "Delivery and setup",
+    "deliveryBody": "Delivery, setup and collection are quoted for your address and confirmed with your booking. Event-service travel rates do not apply to party hire.",
+    "paymentHeading": "Payment",
+    "paymentBody": "Payment arrangements are confirmed with your quote. Please do not make any payment until the team has confirmed your booking.",
+    "cancellationHeading": "Changes and cancellations",
+    "cancellationBody": "Changes and cancellations are handled directly with the team, under the terms confirmed for your booking.",
+    "draftNotice": "These terms are a working summary. The full approved hire terms are pending and must be confirmed by the business before launch. Until then, please confirm the details of your booking directly with the team."
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "heading": "We couldn't find that page",
+    "lead": "The link may be out of date, or the page may have moved. Here are some good places to continue.",
+    "hire": "Browse hire",
+    "areas": "Service areas",
+    "contact": "Get a quote"
+  },
+  "footer": {
+    "about": "Soft play, jumping castle and party fun hire for children's celebrations across Johannesburg, Pretoria and our surrounding service areas.",
+    "hireHeading": "Hire",
+    "companyHeading": "Explore",
+    "areasHeading": "Service areas",
+    "contactHeading": "Contact",
+    "legalHeading": "Legal",
+    "eventServices": "Event services",
+    "rights": "© {year} Lana Luxe Events. All rights reserved.",
+    "credit": "Website by the Lana Luxe Events team.",
+    "madeNote": "Prices shown are the approved amounts and are confirmed with your quote."
+  },
+  "jsonld": {
+    "description": "Soft play, jumping castle and party fun hire for children's celebrations in Johannesburg, Pretoria and surrounding service areas."
+  }
+}

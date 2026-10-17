@@ -1,0 +1,412 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ Tokens */
+@theme {
+  /* Light canvas (Lana Luxe) */
+  --color-canvas: #fefefe;
+  --color-canvas-2: #fef5e4;
+  --color-canvas-3: #f4f1fb;
+  --color-line: rgba(30, 25, 94, 0.12);
+  --color-ink: #1e195e;
+  --color-ink-soft: #4a4488;
+  --color-muted: #6b6595;
+  --color-danger: #b00020;
+
+  /* Brand palette (light theme). */
+  --color-surface: #ffffff;
+  --color-cream: #fef5e4;
+  --color-navy: #1e195e;
+  --color-navy-700: #14113f;
+  --color-navy-300: #6b6595;
+  --color-hot-pink: #e81084;
+  --color-bright-pink: #f8388b;
+  --color-deep-pink: #b80b68;
+  --color-deep-pink-hover: #970653;
+  --color-purple: #752bca;
+  --color-purple-hover: #5d1fa5;
+  --color-turquoise: #03a4c3;
+  --color-yellow: #fcb827;
+  --color-gold: #a57220;
+  --color-gold-dark: #805711;
+  --color-gold-300: #d9b15c;
+  --color-wa-green: #007a27;
+  --color-wa-green-400: #039123;
+  --color-wa-green-hover: #005e1e;
+  --color-blush: #fff0f7;
+  --color-lavender: #f5efff;
+  --color-aqua: #eaf9fc;
+  --color-charcoal: #1e195e;
+
+  /* Typography */
+  --font-display: var(--font-dm-serif), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+
+  /* Fluid type scale */
+  --text-2xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.84rem + 0.2vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.96rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.06rem + 0.4vw, 1.3125rem);
+  --text-xl: clamp(1.3rem, 1.18rem + 0.7vw, 1.625rem);
+  --text-2xl: clamp(1.55rem, 1.32rem + 1.2vw, 2.125rem);
+  --text-3xl: clamp(1.9rem, 1.5rem + 2vw, 2.875rem);
+  --text-4xl: clamp(2.35rem, 1.7rem + 3vw, 3.75rem);
+  --text-5xl: clamp(2.75rem, 1.9rem + 4vw, 4.75rem);
+
+  /* Shape */
+  --radius-arch: 999px 999px 24px 24px;
+  --radius-frame: 28px;
+  --radius-card: 22px;
+  --radius-soft: 16px;
+
+  /* Layout */
+  --spacing-section: clamp(3rem, 7vw, 7.5rem);
+  --container-content: 1280px;
+}
+
+/* ------------------------------------------------------------------ Motion */
+/* Shared motion tokens. Values mirror the Hukoshwa reference: transform and
+   opacity only, an expo ease-out curve, and short, restrained durations. */
+:root {
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-fast: 0.18s;
+  --motion-hover: 0.28s;
+  --motion-base: 0.6s;
+  --motion-slow: 0.85s;
+  --reveal-distance: 28px;
+  --reveal-distance-sm: 16px;
+  --stagger-step: 90ms;
+  --stagger-step-sm: 55ms;
+}
+
+/* ------------------------------------------------------------------- Base */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    color-scheme: light;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-navy);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    color: var(--color-navy);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-deep-pink);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--color-yellow);
+    color: var(--color-navy);
+  }
+}
+
+/* --------------------------------------------------- Accessibility prefs */
+html[data-text-size="large"] {
+  font-size: 112.5%;
+}
+html[data-text-size="x-large"] {
+  font-size: 125%;
+}
+
+html[data-motion="reduced"] * {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ------------------------------------------------------------- Utilities */
+@utility container-content {
+  width: 100%;
+  max-width: var(--container-content);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+@utility skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100%;
+  z-index: 100;
+  background: var(--color-deep-pink);
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: top 0.15s ease;
+
+  &:focus {
+    top: 1rem;
+  }
+}
+
+/* Soft rounded media panel used across the redesigned sections. */
+@utility media-card {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  box-shadow: 0 30px 70px -50px rgba(30, 25, 94, 0.35);
+}
+
+/* --------------------------------------------------------- Dialog motion */
+@keyframes lle-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lle-content-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes lle-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lle-overlay[data-state="open"] {
+  animation: lle-overlay-in 0.18s ease-out;
+}
+
+.lle-dialog[data-state="open"] {
+  animation: lle-content-in 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.lle-menu[data-state="open"] {
+  animation: lle-menu-in 0.14s ease-out;
+}
+
+/* ------------------------------------------------------------ Glass panels */
+@utility surface-raised {
+  box-shadow: 0 30px 70px -50px rgba(30, 25, 94, 0.35);
+}
+
+/* Solid panel used on dark bands for on-dark cards. */
+.glass-dark {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* ----------------------------------------------------------- Sticky header */
+.header-scrolled {
+  background-color: rgba(254, 254, 254, 0.94);
+  border-bottom-color: var(--color-line);
+}
+
+/* ----------------------------------------------------------- Photo marquee */
+@keyframes lle-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: lle-marquee 55s linear infinite;
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none !important;
+  }
+}
+
+/* ----------------------------------------------------------- Scroll reveal */
+/* One shared reveal primitive. Direction and distance come from data
+   attributes; stagger is handled by the per-item --reveal-delay token. */
+.reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  transition:
+    opacity var(--motion-base) var(--ease-out-expo),
+    transform var(--motion-base) var(--ease-out-expo);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal[data-direction="up"] {
+  transform: translateY(var(--reveal-distance));
+}
+.reveal[data-direction="down"] {
+  transform: translateY(calc(-1 * var(--reveal-distance)));
+}
+.reveal[data-direction="left"] {
+  transform: translateX(calc(-1 * var(--reveal-distance)));
+}
+.reveal[data-direction="right"] {
+  transform: translateX(var(--reveal-distance));
+}
+.reveal[data-direction="none"] {
+  transform: none;
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* Contained image reveal: the frame clips, the image eases in scale. */
+.reveal-img {
+  transform: scale(1.06);
+  transition: transform var(--motion-slow) var(--ease-out-expo);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal[data-visible="true"] .reveal-img {
+  transform: scale(1);
+}
+
+/* ------------------------------------------------------------ Hero entrance */
+/* Plays once on load (not scroll bound). Direct children stagger by order.
+   Content is never hidden when scripting is unavailable or motion is reduced. */
+.hero-seq > * {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  transition:
+    opacity var(--motion-base) var(--ease-out-expo),
+    transform var(--motion-base) var(--ease-out-expo);
+  transition-delay: calc(var(--seq, 0) * var(--stagger-step));
+}
+.hero-seq > *:nth-child(1) {
+  --seq: 0;
+}
+.hero-seq > *:nth-child(2) {
+  --seq: 1;
+}
+.hero-seq > *:nth-child(3) {
+  --seq: 2;
+}
+.hero-seq > *:nth-child(4) {
+  --seq: 3;
+}
+.hero-seq > *:nth-child(5) {
+  --seq: 4;
+}
+.hero-seq > *:nth-child(6) {
+  --seq: 5;
+}
+.hero-seq[data-ready="true"] > * {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes hero-image-in {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.hero-image {
+  animation: hero-image-in 1.4s var(--ease-out-expo) both;
+}
+
+/* --------------------------------------------------- Reduced motion / no-JS */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .hero-seq > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    transition-delay: 0ms;
+  }
+  .reveal-img {
+    transform: none;
+    transition: none;
+  }
+  .hero-image {
+    animation: none;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --reveal-distance: var(--reveal-distance-sm);
+    --stagger-step: var(--stagger-step-sm);
+  }
+}
+
+@media (scripting: none) {
+  .reveal,
+  .hero-seq > * {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-img {
+    transform: none;
+  }
+  .hero-image {
+    animation: none;
+  }
+}

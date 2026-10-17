@@ -1,0 +1,74 @@
+{
+  "common": {
+    "skipToContent": "Feta kwa diteng tsa botlhokwa",
+    "getQuote": "Bona tlhwatlhwa",
+    "browseHire": "Tshegetsa go hira",
+    "viewDetails": "Lebelela dintlha",
+    "enquire": "Botsa ka se",
+    "enquireNow": "Botsa jaanong",
+    "call": "Letsa mogala",
+    "email": "Imeile",
+    "menu": "Lenaneo",
+    "close": "Tswala",
+    "reset": "Bosaletsha"
+  },
+  "nav": {
+    "home": "Legae",
+    "hire": "Go hira",
+    "collection": "Kgobokanyo",
+    "packages": "Diphakete",
+    "gallery": "Galari",
+    "about": "Ka ga rona",
+    "contact": "Ikopanye le rona",
+    "serviceAreas": "Mafelo a tirelo",
+    "faqs": "Dipotso"
+  },
+  "categories": {
+    "softPlay": "Papadi e bonolo",
+    "jumpingCastles": "Dikago tsa go tlola",
+    "partyFun": "Boitapoloso jwa moletlo",
+    "packages": "Diphakete",
+    "bubbleHouse": "Ntlo ya bubble",
+    "nurseryDecor": "Mokgabiso"
+  },
+  "a11y": {
+    "title": "Puo le phitlhelelo",
+    "languageHeading": "Puo",
+    "textSizeHeading": "Bogolo jwa mokwalo",
+    "textSizeDefault": "Tlwaelo",
+    "textSizeLarge": "Kgolo",
+    "textSizeXLarge": "Kgolo thata",
+    "motionHeading": "Motsamao",
+    "motionReduced": "Fokotsa motsamao",
+    "resetAll": "Bosaletsha tsotlhe"
+  },
+  "form": {
+    "firstName": "Leina la ntlha",
+    "suburb": "Lokisi",
+    "otherSuburb": "Lokisi lo sele",
+    "eventDate": "Letsatsi la tiragalo",
+    "dateNotDecided": "Letsatsi ga le a swarwa",
+    "notes": "Dintlha",
+    "callback": "Nomoro ya go busetsa mogala",
+    "continue": "Tswelela kwa WhatsApp",
+    "selectedItem": "Sengwe se se hirilweng se se tlhophilweng",
+    "chooseItem": "Tlhopha sengwe sa go hiriwa",
+    "copyEnquiry": "Kopa potso"
+  },
+  "home": {
+    "hero": {
+      "title": "Go hira papadi e bonolo le dikago tsa go tlola Johannesburg le Pretoria",
+      "lead": "Papadi e bonolo, dikago tsa go tlola le boitapoloso jwa moletlo mo meketeng e e itumedisang. Re bolelele letsatsi le lokisi la gago, mme re tla go thusa go tlhopha thulaganyo ya gago."
+    }
+  },
+  "footer": {
+    "hireHeading": "Go hira",
+    "companyHeading": "Sekaseka",
+    "areasHeading": "Mafelo a tirelo",
+    "contactHeading": "Ikopanye le rona"
+  },
+  "notFound": {
+    "heading": "Ga re a fitlhela tsebe eo",
+    "lead": "Kgokaganyo e kanna ya bo e fetile, kgotsa tsebe e sutisitswe."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "common": {
+    "skipToContent": "Fhira u ye kha zwithu zwa ndeme",
+    "getQuote": "Wana mutengo",
+    "browseHire": "Sedza u hira",
+    "viewDetails": "Sedza zwijhe",
+    "enquire": "Vhudzisa nga hezwi",
+    "enquireNow": "Vhudzisa zwino",
+    "call": "Founela",
+    "email": "Imeili",
+    "menu": "Menyu",
+    "close": "Vala",
+    "reset": "Vhuyelela"
+  },
+  "nav": {
+    "home": "Hayani",
+    "hire": "U hira",
+    "collection": "Tshigwada",
+    "packages": "Maphakhethe",
+    "gallery": "Galeri",
+    "about": "Nga ha rine",
+    "contact": "Kwama natsho",
+    "serviceAreas": "Fhethu ha tshumelo",
+    "faqs": "Mbudziso"
+  },
+  "categories": {
+    "softPlay": "Mutambo wo leluwaho",
+    "jumpingCastles": "Dzimba dza u tuma",
+    "partyFun": "Dzipo dza phathi",
+    "packages": "Maphakhethe",
+    "bubbleHouse": "Nndu ya bubble",
+    "nurseryDecor": "Vhukwamani"
+  },
+  "a11y": {
+    "title": "Luambo na u swikelela",
+    "languageHeading": "Luambo",
+    "textSizeHeading": "Vhukulu ha maṅwalwa",
+    "textSizeDefault": "Zwo fanelaho",
+    "textSizeLarge": "Khulwane",
+    "textSizeXLarge": "Khulwane nga maanḓa",
+    "motionHeading": "U tshimbila",
+    "motionReduced": "Shandukisa u tshimbila",
+    "resetAll": "Vhuyelela zwoṱhe"
+  },
+  "form": {
+    "firstName": "Dzina la u thoma",
+    "suburb": "Lokishi",
+    "otherSuburb": "Lokishi ḽiṅwe",
+    "eventDate": "Duṱa ḽa mutambo",
+    "dateNotDecided": "Duṱa a ḽo ngo dzudzanywa",
+    "notes": "Maṅwalo",
+    "callback": "Nomboro ya u founa",
+    "continue": "Bvela phanḓa kha WhatsApp",
+    "selectedItem": "Tshithu tsho hiriwaho tsho nangiwaho",
+    "chooseItem": "Nanga tshithu tsha u hira",
+    "copyEnquiry": "Kopa mbudziso"
+  },
+  "home": {
+    "hero": {
+      "title": "U hira mutambo wo leluwaho na dzimba dza u tuma Johannesburg na Pretoria",
+      "lead": "Mutambo wo leluwaho, dzimba dza u tuma na dzipo dza phathi kha mibvumo i takadzaho. Ri vhudze duṱa ḽaṅu na lokishi, ri ḓo ni thusa u nanga dzudzanyo yaṅu."
+    }
+  },
+  "footer": {
+    "hireHeading": "U hira",
+    "companyHeading": "Sedzulusa",
+    "areasHeading": "Fhethu ha tshumelo",
+    "contactHeading": "Kwama natsho"
+  },
+  "notFound": {
+    "heading": "A ro ngo wana sia ḽeneḽo",
+    "lead": "Khumbelo i nga vha yo fhela tshifhinga, kana sia ḽo sudzuluswa."
+  }
+}
