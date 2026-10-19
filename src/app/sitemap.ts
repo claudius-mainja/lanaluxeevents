@@ -1,4 +1,4 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 import { reviewedLocales } from "@/content/languages";
 import { serviceAreas } from "@/content/areas";
 import { absoluteUrl } from "@/lib/seo";
@@ -18,8 +18,10 @@ const routes: { path: string; priority: number; changeFrequency: MetadataRoute.S
   { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
   { path: "/service-areas", priority: 0.7, changeFrequency: "monthly" },
   { path: "/faqs", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/gifts", priority: 0.7, changeFrequency: "monthly" },
   { path: "/privacy", priority: 0.2, changeFrequency: "yearly" },
   { path: "/hire-terms", priority: 0.2, changeFrequency: "yearly" },
+  { path: "/cookies", priority: 0.2, changeFrequency: "yearly" },
   ...serviceAreas
     .filter((area) => area.hasPage)
     .map((area) => ({
@@ -51,3 +53,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 }
+

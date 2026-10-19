@@ -36,6 +36,7 @@ export const footerExploreLinks: NavItem[] = [
   { href: "/gallery", labelKey: "gallery" },
   { href: "/about", labelKey: "about" },
   { href: "/services", labelKey: "eventServices" },
+  { href: "/gifts", labelKey: "gifts" },
   { href: "/service-areas", labelKey: "serviceAreas" },
   { href: "/faqs", labelKey: "faqs" },
   { href: "/contact", labelKey: "contact" },
@@ -44,4 +45,5 @@ export const footerExploreLinks: NavItem[] = [
 export const footerLegalLinks: NavItem[] = [
   { href: "/privacy", labelKey: "privacy" },
   { href: "/hire-terms", labelKey: "terms" },
+  { href: "/cookies", labelKey: "cookies" },
 ];

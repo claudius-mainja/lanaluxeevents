@@ -10,6 +10,7 @@ import {
   footerLegalLinks,
 } from "@/content/nav";
 import Button from "@/components/ui/Button";
+import CookieSettingsButton from "@/components/cookies/CookieSettingsButton";
 import Logo from "./Logo";
 
 function InstagramIcon({ className }: { className?: string }) {
@@ -194,6 +195,9 @@ export default async function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <CookieSettingsButton />
+            </li>
           </ul>
         </div>
         <div className="container-content flex flex-col gap-1 pb-6 text-2xs text-cream/50">

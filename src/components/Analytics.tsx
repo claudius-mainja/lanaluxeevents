@@ -1,16 +1,22 @@
 "use client";
 
 import Script from "next/script";
+import { useConsentChoice } from "@/lib/consent";
 
 const ga4Id = process.env.NEXT_PUBLIC_GA4_ID;
 const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
 /**
- * Loads the client-owned GA4 and Meta tags only when their IDs are configured.
- * When they are absent (as in this build), no third-party tags load and the
- * typed event layer falls back to window.dataLayer.
+ * Loads the client-owned GA4 and Meta tags only when their IDs are configured
+ * AND the visitor has accepted analytics via the cookie banner. When consent
+ * is declined (or undecided), no third-party tags load; the typed event layer
+ * in src/lib/analytics.ts safely no-ops without them.
  */
 export default function Analytics() {
+  const consent = useConsentChoice();
+
+  if (consent !== "accepted") return null;
+
   return (
     <>
       {ga4Id ? (

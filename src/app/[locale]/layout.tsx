@@ -13,6 +13,7 @@ import SkipLink from "@/components/layout/SkipLink";
 import AccessibilityBoot from "@/components/layout/AccessibilityBoot";
 import StickyCta from "@/components/quote/StickyCta";
 import Analytics from "@/components/Analytics";
+import CookieConsent from "@/components/cookies/CookieConsent";
 import "@/app/globals.css";
 
 export function generateStaticParams() {
@@ -48,8 +49,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [
         {
           url: "/og/lana-luxe-events.png",
-          width: 1200,
-          height: 630,
+          width: 1536,
+          height: 1024,
           alt: `${site.brand} — ${site.tagline}`,
         },
       ],
@@ -89,6 +90,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           </main>
           <Footer />
           <StickyCta />
+          <CookieConsent />
         </NextIntlClientProvider>
         <Analytics />
       </body>
