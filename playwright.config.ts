@@ -14,6 +14,9 @@ export default defineConfig({
   use: {
     baseURL,
     trace: "on-first-retry",
+    // Existing suites run with a pre-seeded cookie choice so the consent
+    // banner never overlays pages under test. tests/consent.spec.ts opts out.
+    storageState: "tests/fixtures/consent-declined.json",
   },
   projects: [
     { name: "chromium", use: { ...devices["Desktop Chrome"] } },
