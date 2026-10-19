@@ -60,6 +60,10 @@
       "title": "Hire Terms | Lana Luxe Events",
       "description": "Read Lana Luxe Events' hire terms, including the confirmed arrangements for bookings, delivery, payment and cancellations before completing your booking."
     },
+    "cookies": {
+      "title": "Cookie Policy | Lana Luxe Events",
+      "description": "See which storage this website uses, what optional analytics cookies do with your permission, and how to accept, decline or change your choice at any time."
+    },
     "notFound": {
       "title": "Page not found | Lana Luxe Events",
       "description": "The page you were looking for could not be found. Browse our hire, service areas or start an enquiry instead."
@@ -110,10 +114,15 @@
     "gallery": "Gallery",
     "about": "About",
     "contact": "Contact",
-    "eventServices": "Wedding & Planning",
-    "more": "More",
-    "serviceAreas": "Service areas",
-    "faqs": "FAQs"
+      "eventServices": "Wedding & Planning",
+      "gifts": "Gifts",
+      "more": "More",
+      "serviceAreas": "Service areas",
+    "faqs": "FAQs",
+    "privacy": "Privacy",
+    "terms": "Hire terms",
+    "cookies": "Cookies",
+    "cookieSettings": "Cookie settings"
   },
   "categories": {
     "softPlay": "Soft Play",
@@ -168,6 +177,7 @@
     "copyFailed": "Copy did not work. Select the message below and copy it manually.",
     "directWhatsApp": "Prefer to chat first? Message us directly on WhatsApp",
     "messagePreview": "Your enquiry message",
+    "opened": "WhatsApp is opening with your enquiry. Review the message there and tap send — we'll have it once you send it.",
     "whatsappNote": "Opening WhatsApp does not send your message. Review the message in WhatsApp and tap send.",
     "resetDraft": "Clear this form",
     "preferOther": "Prefer to talk?",
@@ -196,6 +206,7 @@
       "coverageLine": "Serving Bryanston, Sandton City area, Randburg, Pretoria, Germiston, Centurion, Midrand and the northern suburbs."
     },
     "proof": {
+      "eyebrow": "Why us",
       "heading": "A calmer way to plan the play",
       "point1Title": "Clear options, clear prices",
       "point1Body": "Every option is listed with its approved price so you can compare before you commit.",
@@ -365,6 +376,7 @@
     "eyebrow": "Gallery",
     "heading": "Setups and styling",
     "lead": "Browse photographs of the setups we bring to celebrations. Filter by service and open any image to view it larger.",
+    "browseHeading": "Browse the gallery",
     "filterLabel": "Filter photographs",
     "all": "All",
     "openImage": "Open photograph larger",
@@ -541,7 +553,30 @@
     "analyticsBody": "If analytics is enabled, we record anonymous interactions such as which service pages are viewed and when an enquiry is started. We do not place your name, notes or phone number into analytics, tracking URLs or logs.",
     "contactHeading": "Contacting us about your information",
     "contactBody": "You can ask us about the information you have shared with us, or ask us to remove it, by contacting us using the details below.",
+    "cookiesNote": "Analytics cookies are optional. You can accept or decline them, and change your choice at any time, from the cookie settings — see the cookie policy.",
     "policyNote": "This notice describes how the website and enquiry flow currently work. Further business policy details, including any statutory disclosures, are being confirmed and will be added before launch."
+  },
+  "cookies": {
+    "eyebrow": "Cookies",
+    "heading": "Cookie policy",
+    "lead": "This page explains the small amount of storage this website uses, and the optional analytics you can accept or decline.",
+    "consent": {
+      "label": "Cookie notice",
+      "heading": "Cookies on this site",
+      "body": "We use essential storage in your browser to remember your choices. With your permission, we also use analytics (Google Analytics and Meta Pixel) to understand how the site is used.",
+      "policyLink": "Cookie policy",
+      "accept": "Accept analytics",
+      "decline": "Decline"
+    },
+    "essentialHeading": "Essential storage",
+    "essentialBody": "This website keeps two small values in your browser's local storage: your cookie choice and your accessibility settings. They stay on your device, are not sent to a server, and are only used to remember the choices you have made. The website still works without them, but your preferences reset.",
+    "analyticsHeading": "Optional analytics",
+    "analyticsBody": "If you accept, we use Google Analytics and Meta Pixel to measure which pages are viewed and which enquiries start. These tools can set their own cookies and process usage information on their own servers. Nothing you type into the enquiry form is sent to analytics.",
+    "choicesHeading": "Changing your choice",
+    "choicesBody": "Use Cookie settings in the footer at any time to accept or decline again. Declining leaves the website fully usable. You can also clear your browser's site data to reset both this choice and your accessibility settings.",
+    "contactHeading": "Questions about cookies",
+    "contactBody": "If you have questions about how this website uses cookies or local storage, contact us using the details in the footer.",
+    "policyNote": "This page describes how the website works today. If the optional tools change, this page will be updated."
   },
   "terms": {
     "eyebrow": "Hire terms",

@@ -170,5 +170,5 @@ export const weddingAddons = [
   { item: "Out-of-Town Travel Fee (>50km)", price: "R4.50 / km" },
 ];
 
-export const weddingRetaierNote =
+export const weddingRetainerNote =
   "Introductory portfolio rates apply to early bookings in exchange for a verified review and media rights. A 40% retainer secures your date. Flexible milestone payment plans are available upon request.";

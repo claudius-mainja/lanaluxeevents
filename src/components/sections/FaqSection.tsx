@@ -3,6 +3,7 @@ import { Plus } from "lucide-react";
 import { getFaqsFor, type FaqPage } from "@/content/faqs";
 import Section from "@/components/ui/Section";
 import Eyebrow from "@/components/ui/Eyebrow";
+import Reveal from "@/components/ui/Reveal";
 import { JsonLd, faqJsonLd } from "@/components/seo/JsonLd";
 
 /**
@@ -45,20 +46,20 @@ export default async function FaqSection({
         </div>
 
         <ul className="space-y-3">
-          {entries.map((entry) => (
-            <li key={entry.id}>
-              <details className="group overflow-hidden rounded-frame border border-line bg-white transition-colors open:border-transparent open:shadow-[0_30px_70px_-55px_rgba(30,25,94,0.6)]">
+          {entries.map((entry, index) => (
+            <Reveal as="li" key={entry.id} delay={Math.min(index * 55, 330)}>
+              <details className="faq-item group overflow-hidden rounded-frame border border-line bg-white transition-colors open:border-transparent open:shadow-[0_30px_70px_-55px_rgba(30,25,94,0.6)]">
                 <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-left font-display text-lg text-navy transition-colors hover:text-deep-pink sm:px-6 [&::-webkit-details-marker]:hidden">
                   {entry.question}
                   <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-navy/15 text-navy transition-all duration-300 group-open:rotate-45 group-open:border-transparent group-open:bg-deep-pink group-open:text-white">
                     <Plus aria-hidden="true" className="h-4 w-4" />
                   </span>
                 </summary>
-                <p className="px-5 pb-5 pr-12 text-sm leading-relaxed text-navy-300 sm:px-6">
+                <p className="faq-answer px-5 pb-5 pr-12 text-sm leading-relaxed text-navy-300 sm:px-6">
                   {entry.answer}
                 </p>
               </details>
-            </li>
+            </Reveal>
           ))}
         </ul>
       </div>

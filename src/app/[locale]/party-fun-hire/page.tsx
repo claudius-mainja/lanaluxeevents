@@ -51,7 +51,12 @@ export default async function PartyFunPage({ params }: Props) {
           }),
         ]}
       />
-      <PageHero eyebrow={t("eyebrow")} title={t("heroTitle")} lead={t("heroLead")} imageKey="kidsCombo" />
+      <PageHero
+        eyebrow={t("eyebrow")}
+        title={t("heroTitle")}
+        lead={t("heroLead")}
+        imageKey="stockCandyCart"
+      />
       <IntroSection namespace="partyFun" noteKey="consumablesNote" tone="aqua" />
       <ServiceItems category="party-fun" namespace="partyFun" />
       <RelatedItems ids={related} />

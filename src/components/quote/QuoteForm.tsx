@@ -33,10 +33,12 @@ export interface SelectableItem {
 export default function QuoteForm({
   items,
   initialItemId,
+  initialNotes = "",
   localeLabel,
 }: {
   items: SelectableItem[];
   initialItemId: string;
+  initialNotes?: string;
   localeLabel: string;
 }) {
   const t = useTranslations("form");
@@ -44,7 +46,8 @@ export default function QuoteForm({
   const tErr = useTranslations("form.errors");
 
   const today = useMemo(() => todayInSouthAfrica(), []);
-  const [status, setStatus] = useState<"idle" | "copied" | "failed">("idle");
+  const [status, setStatus] = useState<"idle" | "opened" | "copied" | "failed">("idle");
+  const [cooldown, setCooldown] = useState(false);
   const startedRef = useRef(false);
 
   const grouped = useMemo(() => {
@@ -73,7 +76,7 @@ export default function QuoteForm({
       otherSuburb: "",
       dateNotDecided: false,
       eventDate: "",
-      notes: "",
+      notes: initialNotes,
       callback: "",
     },
     mode: "onSubmit",
@@ -94,10 +97,10 @@ export default function QuoteForm({
       otherSuburb: draft.otherSuburb ?? "",
       dateNotDecided: draft.dateNotDecided ?? false,
       eventDate: draft.eventDate ?? "",
-      notes: draft.notes ?? "",
+      notes: initialNotes || draft.notes || "",
       callback: draft.callback ?? "",
     });
-  }, [initialItemId, reset]);
+  }, [initialItemId, initialNotes, reset]);
 
   const watched = watch([
     "itemId",
@@ -153,20 +156,26 @@ export default function QuoteForm({
   }
 
   function onSubmit(values: QuoteFormValues) {
+    if (cooldown) return;
     const item = items.find((entry) => entry.id === values.itemId);
+    const effectiveSuburb =
+      values.suburb === OTHER_SUBURB ? (values.otherSuburb ?? "").trim() : values.suburb;
     const message = buildEnquiryMessage({
       itemId: values.itemId || "",
       itemName: item?.name ?? "",
       firstName: values.firstName,
-      suburb: values.suburb === OTHER_SUBURB ? values.otherSuburb ?? "" : values.suburb,
+      suburb: effectiveSuburb,
       eventDate: values.eventDate,
-      dateNotDecided: values.dateNotDecided,
+      dateNotDecided: Boolean(values.dateNotDecided),
       notes: values.notes,
       callback: values.callback,
       localeLabel,
     });
     track("whatsapp_handoff", { item_id: values.itemId || undefined });
-    window.open(buildWhatsAppUrl(site.whatsapp.number, message), "_blank", "noopener");
+    window.open(buildWhatsAppUrl(site.whatsapp.number, message), "_blank", "noopener,noreferrer");
+    setStatus("opened");
+    setCooldown(true);
+    window.setTimeout(() => setCooldown(false), 1500);
   }
 
   async function copyEnquiry() {
@@ -192,14 +201,14 @@ export default function QuoteForm({
       otherSuburb: "",
       dateNotDecided: false,
       eventDate: "",
-      notes: "",
+      notes: initialNotes,
       callback: "",
     });
     setStatus("idle");
   }
 
   const fieldClass =
-    "min-h-11 w-full rounded-soft border border-line bg-white px-4 py-2.5 text-sm text-navy placeholder:text-navy-300/60 focus:border-deep-pink data-[error=true]:border-danger data-[error=true]:focus:border-danger";
+    "min-h-11 w-full rounded-soft border border-line bg-white px-4 py-2.5 text-sm text-navy placeholder:text-navy-300/60 transition-colors duration-200 motion-reduce:transition-none focus:border-deep-pink data-[error=true]:border-danger data-[error=true]:focus:border-danger";
   const labelClass = "block text-sm font-medium text-navy";
 
   return (
@@ -402,7 +411,7 @@ export default function QuoteForm({
         ) : null}
 
         <div className="mt-8 flex flex-wrap items-center gap-3">
-          <Button type="submit" size="lg">
+          <Button type="submit" size="lg" disabled={cooldown}>
             {t("continue")}
           </Button>
           <Button type="button" variant="outline" size="lg" onClick={copyEnquiry}>
@@ -413,8 +422,18 @@ export default function QuoteForm({
           </Button>
         </div>
 
-        <p aria-live="polite" className="mt-3 min-h-5 text-sm text-navy">
-          {status === "copied" ? t("copied") : status === "failed" ? t("copyFailed") : ""}
+        <p
+          key={status}
+          aria-live="polite"
+          className={cx("mt-3 min-h-5 text-sm text-navy", status !== "idle" && "lle-fade-in")}
+        >
+          {status === "opened"
+            ? t("opened")
+            : status === "copied"
+              ? t("copied")
+              : status === "failed"
+                ? t("copyFailed")
+                : ""}
         </p>
 
         <p className="mt-4 text-xs text-navy-300">{t("whatsappNote")}</p>

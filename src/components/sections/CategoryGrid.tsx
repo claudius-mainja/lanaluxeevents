@@ -4,8 +4,8 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Section from "@/components/ui/Section";
 import Eyebrow from "@/components/ui/Eyebrow";
-import { images, type ImageKey } from "@/content/images";
-import {
+import Reveal from "@/components/ui/Reveal";
+import { images, type ImageKey } from "@/content/images";import {
   categories,
   categoryLabelKey,
   type CategoryId,
@@ -37,7 +37,7 @@ export default async function CategoryGrid() {
 
   return (
     <Section aria-labelledby="category-grid-heading">
-      <div className="mx-auto max-w-2xl text-center">
+      <Reveal className="mx-auto max-w-2xl text-center">
         <Eyebrow className="justify-center">{t("eyebrow")}</Eyebrow>
         <h2
           id="category-grid-heading"
@@ -46,11 +46,11 @@ export default async function CategoryGrid() {
           {t("heading")}
         </h2>
         <p className="mt-4 text-ink-soft">{t("lead")}</p>
-      </div>
+      </Reveal>
 
       <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {cards.map((card) => (
-          <li key={card.id}>
+        {cards.map((card, index) => (
+          <Reveal as="li" key={card.id} delay={Math.min(index * 70, 350)}>
             <Link
               href={card.href}
               className="group relative block overflow-hidden rounded-frame border border-line bg-canvas-2"
@@ -79,7 +79,7 @@ export default async function CategoryGrid() {
                 </span>
               </div>
             </Link>
-          </li>
+          </Reveal>
         ))}
       </ul>
     </Section>

@@ -3,7 +3,6 @@ import { getTranslations } from "next-intl/server";
 import { ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 import Eyebrow from "@/components/ui/Eyebrow";
-import HeroSequence from "@/components/ui/HeroSequence";
 import { images } from "@/content/images";
 
 /**
@@ -34,7 +33,7 @@ export default async function HeroCollage() {
       <div aria-hidden="true" className="absolute inset-0 bg-deep-pink/80" />
 
       <div className="container-content relative py-24 text-center lg:py-32">
-        <HeroSequence className="mx-auto max-w-4xl">
+        <div className="hero-seq mx-auto max-w-4xl">
           <Eyebrow tone="cream" className="justify-center">
             {t("eyebrow")}
           </Eyebrow>
@@ -55,11 +54,7 @@ export default async function HeroCollage() {
               {tc("getQuote")}
               <ArrowRight aria-hidden="true" className="h-4 w-4" />
             </Button>
-            <Button
-              href="/collection"
-              size="lg"
-              className="border border-cream/40 bg-transparent text-cream hover:bg-white/10"
-            >
+            <Button href="/collection" size="lg" variant="outlineDark">
               {tc("browseHire")}
             </Button>
           </div>
@@ -69,7 +64,7 @@ export default async function HeroCollage() {
             <li className="inline-flex items-center gap-2">{t("badge2")}</li>
             <li className="inline-flex items-center gap-2">{t("badge3")}</li>
           </ul>
-        </HeroSequence>
+        </div>
       </div>
     </section>
   );

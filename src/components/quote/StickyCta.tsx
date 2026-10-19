@@ -15,6 +15,7 @@ export default function StickyCta() {
   const t = useTranslations("common");
   const pathname = usePathname();
   const [footerVisible, setFooterVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const footer = document.querySelector("footer");
@@ -27,10 +28,17 @@ export default function StickyCta() {
     return () => observer.disconnect();
   }, []);
 
-  if (pathname === "/contact" || footerVisible) return null;
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 320);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  if (pathname === "/contact" || footerVisible || !scrolled) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-30 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] lg:hidden">
+    <div className="lle-slide-up fixed inset-x-0 bottom-0 z-30 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] lg:hidden">
       <Button href="/contact" size="lg" className="w-full">
         <MessageCircle aria-hidden="true" className="h-4 w-4" />
         {t("getQuote")}

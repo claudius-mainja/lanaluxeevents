@@ -15,7 +15,6 @@ const nextConfig: NextConfig = {
       // Legacy route preservation -> new information architecture.
       { source: "/index.html", destination: "/", permanent: true },
       { source: "/home", destination: "/", permanent: true },
-      { source: "/services", destination: "/services", permanent: false },
     ];
   },
 };

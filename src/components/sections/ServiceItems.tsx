@@ -27,6 +27,7 @@ export default async function ServiceItems({
           <ItemDetails
             key={item.id}
             item={item}
+            index={index}
             imageSide={index % 2 === 0 ? "left" : "right"}
           />
         ))}

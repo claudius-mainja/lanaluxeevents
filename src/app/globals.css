@@ -233,6 +233,43 @@ html[data-motion="reduced"] * {
   animation: lle-menu-in 0.14s ease-out;
 }
 
+/* Bottom-anchored bars (cookie banner, mobile sticky CTA) slide up. */
+@keyframes lle-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lle-slide-up {
+  animation: lle-slide-up 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* FAQ answers fade in when their <details> opens. */
+.faq-item[open] .faq-answer {
+  animation: lle-fade-in 0.24s ease-out;
+}
+
+/* Brief confirmation fade for form status messages. */
+@keyframes lle-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.lle-fade-in {
+  animation: lle-fade-in 0.2s ease-out;
+}
+
 /* ------------------------------------------------------------ Glass panels */
 @utility surface-raised {
   box-shadow: 0 30px 70px -50px rgba(30, 25, 94, 0.35);
@@ -328,14 +365,32 @@ html[data-motion="reduced"] * {
 
 /* ------------------------------------------------------------ Hero entrance */
 /* Plays once on load (not scroll bound). Direct children stagger by order.
-   Content is never hidden when scripting is unavailable or motion is reduced. */
+   CSS-driven so it starts with first paint: no hydration wait, and the hero
+   copy is never left invisible on a slow connection or without JavaScript. */
+@keyframes hero-seq-in {
+  from {
+    opacity: 0;
+    transform: translateY(var(--reveal-distance));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .hero-seq > * {
-  opacity: 0;
-  transform: translateY(var(--reveal-distance));
-  transition:
-    opacity var(--motion-base) var(--ease-out-expo),
-    transform var(--motion-base) var(--ease-out-expo);
-  transition-delay: calc(var(--seq, 0) * var(--stagger-step));
+  animation: hero-seq-in var(--motion-base) var(--ease-out-expo) both;
+  animation-delay: calc(var(--seq, 0) * var(--stagger-step));
+}
+@keyframes hero-image-in {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.hero-image {
+  animation: hero-image-in 1.4s var(--ease-out-expo) both;
 }
 .hero-seq > *:nth-child(1) {
   --seq: 0;
@@ -355,29 +410,13 @@ html[data-motion="reduced"] * {
 .hero-seq > *:nth-child(6) {
   --seq: 5;
 }
-.hero-seq[data-ready="true"] > * {
-  opacity: 1;
-  transform: none;
-}
-
-@keyframes hero-image-in {
-  from {
-    transform: scale(1.05);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.hero-image {
-  animation: hero-image-in 1.4s var(--ease-out-expo) both;
-}
-
 /* --------------------------------------------------- Reduced motion / no-JS */
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .hero-seq > * {
     opacity: 1;
     transform: none;
+    animation: none;
     transition: none;
     transition-delay: 0ms;
   }
@@ -385,7 +424,7 @@ html[data-motion="reduced"] * {
     transform: none;
     transition: none;
   }
-  .hero-image {
+  .lle-fade-in {
     animation: none;
   }
 }
@@ -402,11 +441,9 @@ html[data-motion="reduced"] * {
   .hero-seq > * {
     opacity: 1;
     transform: none;
+    animation: none;
   }
   .reveal-img {
     transform: none;
-  }
-  .hero-image {
-    animation: none;
   }
 }

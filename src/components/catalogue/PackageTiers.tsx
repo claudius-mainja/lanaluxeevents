@@ -39,6 +39,7 @@ export default function PackageTiers({ tiers }: { tiers: PackageTier[] }) {
             onClick={() => setSelectedId(tier.item.id)}
             className={cx(
               "min-h-12 rounded-full border px-5 text-sm font-medium transition-all duration-300",
+              "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep-pink",
               tier.item.id === selected.item.id
                 ? "bg-deep-pink border-transparent text-white shadow-[0_18px_40px_-22px_rgba(184,11,104,0.9)]"
                 : "border-navy/15 bg-white text-navy hover:-translate-y-0.5 hover:border-deep-pink hover:text-deep-pink",
@@ -95,7 +96,7 @@ export default function PackageTiers({ tiers }: { tiers: PackageTier[] }) {
       <div className="mt-12">
         <h3 className="font-display text-2xl text-navy">{t("compareHeading")}</h3>
         <p className="mt-2 text-sm text-navy-300">{t("compareNote")}</p>
-        <div className="mt-6 overflow-x-auto">
+        <div className="mt-6 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
           <table className="w-full min-w-[36rem] border-collapse text-left text-sm">
             <thead>
               <tr className="border-b border-navy/15">
@@ -120,7 +121,7 @@ export default function PackageTiers({ tiers }: { tiers: PackageTier[] }) {
                     <button
                       type="button"
                       onClick={() => setSelectedId(tier.item.id)}
-                      className="text-left font-medium text-navy transition-colors hover:text-deep-pink"
+                      className="rounded-sm text-left font-medium text-navy transition-colors hover:text-deep-pink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep-pink"
                     >
                       {tier.item.name}
                     </button>

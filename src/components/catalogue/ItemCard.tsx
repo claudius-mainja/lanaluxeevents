@@ -9,12 +9,14 @@ import { categoryLabelKey } from "@/content/catalogue";
 import { formatPrice } from "@/lib/format";
 import { track } from "@/lib/analytics";
 
+const gridSizes = "(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 400px";
+
 export default function ItemCard({
   item,
-  index = 0,
+  sizes = gridSizes,
 }: {
   item: CatalogueItem;
-  index?: number;
+  sizes?: string;
 }) {
   const t = useTranslations("common");
   const tCat = useTranslations("categories");
@@ -33,9 +35,8 @@ export default function ItemCard({
             src={image}
             alt={item.name}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes={sizes}
             className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-            loading={index < 3 ? "eager" : "lazy"}
           />
         </div>
       ) : (

@@ -6,6 +6,7 @@ import { buildMetadata } from "@/lib/seo";
 import { JsonLd, breadcrumbJsonLd } from "@/components/seo/JsonLd";
 import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
+import CtaBand from "@/components/sections/CtaBand";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -61,6 +62,7 @@ export default async function HireTermsPage({ params }: Props) {
           </p>
         </div>
       </Section>
+      <CtaBand />
     </>
   );
 }

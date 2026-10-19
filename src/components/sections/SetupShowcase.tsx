@@ -71,7 +71,10 @@ export default function SetupShowcase() {
               key={item.id}
               className="w-[85%] shrink-0 snap-start sm:w-[48%] lg:w-[32%] xl:w-[23.5%]"
             >
-              <ItemCard item={item} />
+              <ItemCard
+                item={item}
+                sizes="(max-width: 639px) 85vw, (max-width: 1023px) 48vw, 400px"
+              />
             </li>
           ))}
         </ul>

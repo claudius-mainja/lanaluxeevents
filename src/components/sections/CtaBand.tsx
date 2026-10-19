@@ -29,11 +29,7 @@ export default async function CtaBand({
             {tCommon("getQuote")}
             <ArrowUpRight aria-hidden="true" className="h-4 w-4" />
           </Button>
-          <Button
-            href="/collection"
-            size="lg"
-            className="border border-cream/40 bg-transparent text-cream transition-colors hover:bg-cream/10"
-          >
+          <Button href="/collection" size="lg" variant="outlineDark">
             {tCommon("browseHire")}
           </Button>
         </div>

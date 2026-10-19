@@ -153,9 +153,9 @@ export default function CatalogueBrowser({
           </div>
         ) : (
           <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((item, index) => (
+            {filtered.map((item) => (
               <li key={item.id}>
-                <ItemCard item={item} index={index} />
+                <ItemCard item={item} />
               </li>
             ))}
           </ul>

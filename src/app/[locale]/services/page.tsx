@@ -10,7 +10,7 @@ import {
   weddingAddons,
   weddingOfferings,
   weddingPackages,
-  weddingRetaierNote,
+  weddingRetainerNote,
   weddingSteps,
   weddingStyleGallery,
 } from "@/content/wedding";
@@ -49,14 +49,15 @@ export default async function ServicesPage({ params }: Props) {
       <JsonLd
         data={[
           breadcrumbJsonLd(locale as Locale, [
+            { name: tNav("home"), path: "/" },
             { name: tNav("eventServices"), path: "/services" },
           ]),
           serviceJsonLd({
             locale: locale as Locale,
             path: "/services",
-            name: "Wedding Décor & Planning",
+            name: t("heroTitle"),
             description:
-              "Luxury wedding décor, styling and planning across Johannesburg and Pretoria — tent draping, monogram backdrops, florals and full or partial coordination.",
+              t("heroLead"),
           }),
         ]}
       />
@@ -145,7 +146,7 @@ export default async function ServicesPage({ params }: Props) {
               </div>
             ))}
           </dl>
-          <p className="mt-6 text-sm text-navy-300">{weddingRetaierNote}</p>
+          <p className="mt-6 text-sm text-navy-300">{weddingRetainerNote}</p>
         </div>
       </Section>
 
@@ -282,7 +283,7 @@ export default async function ServicesPage({ params }: Props) {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-navy-300">{t("ctaBody")}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Button href="/contact?event=Wedding&focus=wedding#quote" size="lg" variant="book">
+            <Button href="/contact?event=Wedding#quote" size="lg" variant="book">
               {t("ctaSubmit")}
               <ArrowRight aria-hidden="true" className="h-4 w-4" />
             </Button>

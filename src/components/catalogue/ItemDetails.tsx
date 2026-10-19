@@ -13,9 +13,11 @@ import EnquireButton from "./EnquireButton";
 export default async function ItemDetails({
   item,
   imageSide = "left",
+  index,
 }: {
   item: CatalogueItem;
   imageSide?: "left" | "right";
+  index?: number;
 }) {
   const t = await getTranslations("common");
   const tCat = await getTranslations("categories");
@@ -49,9 +51,19 @@ export default async function ItemDetails({
         ) : null}
 
         <div className={cx(image ? "lg:col-span-7" : "lg:col-span-12")}>
-          <p className="text-2xs font-semibold uppercase tracking-[0.2em] text-navy-300">
-            {tCat(categoryLabelKey(item.category))}
-          </p>
+          <div className="flex items-baseline gap-3">
+            {typeof index === "number" ? (
+              <span
+                aria-hidden="true"
+                className="font-display text-lg text-gold-dark"
+              >
+                {String(index + 1).padStart(2, "0")}
+              </span>
+            ) : null}
+            <p className="text-2xs font-semibold uppercase tracking-[0.2em] text-navy-300">
+              {tCat(categoryLabelKey(item.category))}
+            </p>
+          </div>
           <h3 className="mt-2 font-display text-2xl text-navy sm:text-3xl">
             {item.name}
           </h3>

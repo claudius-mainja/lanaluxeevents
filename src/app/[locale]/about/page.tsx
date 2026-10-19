@@ -1,11 +1,14 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
+import { images } from "@/content/images";
 import { JsonLd, breadcrumbJsonLd } from "@/components/seo/JsonLd";
 import PageHero from "@/components/sections/PageHero";
 import Section from "@/components/ui/Section";
+import Reveal from "@/components/ui/Reveal";
 import CtaBand from "@/components/sections/CtaBand";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -54,19 +57,46 @@ export default async function AboutPage({ params }: Props) {
             <p className="text-lg text-navy-300">{t("approachBody")}</p>
           </div>
         </div>
+
+        <Reveal className="mt-14">
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-frame border border-line">
+              <Image
+                src={images.hero.src}
+                alt={images.hero.alt}
+                width={images.hero.width}
+                height={images.hero.height}
+                sizes="(max-width: 640px) 100vw, 50vw"
+                className="h-full w-full object-cover reveal-img"
+              />
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-frame border border-line">
+              <Image
+                src={images.weddingTent.src}
+                alt={images.weddingTent.alt}
+                width={images.weddingTent.width}
+                height={images.weddingTent.height}
+                sizes="(max-width: 640px) 100vw, 50vw"
+                className="h-full w-full object-cover reveal-img"
+              />
+            </div>
+          </div>
+        </Reveal>
       </Section>
 
       <Section tone="cream">
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <h2 className="font-display text-2xl text-navy">{t("servicesHeading")}</h2>
-            <p className="mt-4 text-navy-300">{t("servicesBody")}</p>
+        <Reveal>
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+            <div>
+              <h2 className="font-display text-2xl text-navy">{t("servicesHeading")}</h2>
+              <p className="mt-4 text-navy-300">{t("servicesBody")}</p>
+            </div>
+            <div>
+              <h2 className="font-display text-2xl text-navy">{t("areasHeading")}</h2>
+              <p className="mt-4 text-navy-300">{t("areasBody")}</p>
+            </div>
           </div>
-          <div>
-            <h2 className="font-display text-2xl text-navy">{t("areasHeading")}</h2>
-            <p className="mt-4 text-navy-300">{t("areasBody")}</p>
-          </div>
-        </div>
+        </Reveal>
       </Section>
 
       <Section tone="white" aria-labelledby="values-heading">
@@ -74,11 +104,16 @@ export default async function AboutPage({ params }: Props) {
           {t("valuesHeading")}
         </h2>
         <ul className="mt-10 grid gap-8 sm:grid-cols-3">
-          {values.map((value) => (
-            <li key={value} className="border-t border-gold/50 pt-6">
+          {values.map((value, index) => (
+            <Reveal
+              as="li"
+              key={value}
+              delay={index * 80}
+              className="border-t border-gold/50 pt-6"
+            >
               <h3 className="font-display text-xl text-navy">{t(`${value}Title`)}</h3>
               <p className="mt-3 text-sm text-navy-300">{t(`${value}Body`)}</p>
-            </li>
+            </Reveal>
           ))}
         </ul>
       </Section>

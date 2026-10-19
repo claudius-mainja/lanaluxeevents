@@ -1,7 +1,22 @@
 import { getTranslations } from "next-intl/server";
+import { type Locale } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/seo";
 import Section from "@/components/ui/Section";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Button from "@/components/ui/Button";
+
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta.notFound" });
+  return buildMetadata({
+    locale: locale as Locale,
+    path: "/404",
+    title: t("title"),
+    description: t("description"),
+  });
+}
 
 export default async function NotFound() {
   const t = await getTranslations("notFound");

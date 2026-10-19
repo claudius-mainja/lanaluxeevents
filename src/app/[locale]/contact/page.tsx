@@ -17,7 +17,7 @@ import CallLink from "@/components/contact/CallLink";
 
 type Props = {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ item?: string }>;
+  searchParams: Promise<{ item?: string; services?: string; event?: string }>;
 };
 
 export async function generateMetadata({ params }: Props) {
@@ -34,7 +34,8 @@ export async function generateMetadata({ params }: Props) {
 export default async function ContactPage({ params, searchParams }: Props) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
-  const { item: requestedItem } = await searchParams;
+  const { item: requestedItem, services: requestedService, event: requestedEvent } =
+    await searchParams;
 
   const t = await getTranslations("contact");
   const tNav = await getTranslations("nav");
@@ -49,6 +50,8 @@ export default async function ContactPage({ params, searchParams }: Props) {
     requestedItem && catalogue.some((entry) => entry.id === requestedItem)
       ? requestedItem
       : "";
+  const requestedContext = requestedService?.trim() || requestedEvent?.trim() || "";
+  const initialNotes = requestedContext ? `Enquiry about: ${requestedContext}` : "";
   const localeLabel = getLanguage(locale)?.label ?? "English";
 
   const nextSteps = [t("next1"), t("next2"), t("next3"), t("next4")];
@@ -77,7 +80,12 @@ export default async function ContactPage({ params, searchParams }: Props) {
 
       <Section tone="white" spacing="default" id="quote">
         <div className="mt-0">
-          <QuoteForm items={items} initialItemId={initialItemId} localeLabel={localeLabel} />
+          <QuoteForm
+            items={items}
+            initialItemId={initialItemId}
+            initialNotes={initialNotes}
+            localeLabel={localeLabel}
+          />
         </div>
       </Section>
 

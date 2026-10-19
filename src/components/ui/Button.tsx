@@ -20,6 +20,7 @@ interface BaseProps {
   size?: Size;
   className?: string;
   "aria-label"?: string;
+  disabled?: boolean;
 }
 
 interface LinkButtonProps extends BaseProps {
@@ -65,8 +66,10 @@ export default function Button(props: ButtonProps) {
   } = props;
 
   const classes = cx(
-    "inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-wide transition-colors duration-200",
-    "focus-visible:outline-2 focus-visible:outline-offset-2",
+    "group inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-wide",
+    "transition-[background-color,border-color,color,transform] duration-200 motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0",
+    "motion-safe:[&_svg]:transition-transform motion-safe:[&_svg]:duration-200 motion-safe:group-hover:[&_svg]:translate-x-0.5",
+    "focus-visible:outline-2 focus-visible:outline-offset-2 disabled:pointer-events-none disabled:opacity-60",
     variantClasses[variant],
     sizeClasses[size],
     className,
@@ -112,6 +115,8 @@ export default function Button(props: ButtonProps) {
       type={props.type ?? "button"}
       className={classes}
       onClick={onClick}
+      disabled={props.disabled}
+      aria-disabled={props.disabled ? "true" : undefined}
       aria-label={props["aria-label"]}
     >
       {children}

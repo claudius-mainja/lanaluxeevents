@@ -3,7 +3,6 @@ import { getTranslations } from "next-intl/server";
 import { ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 import Eyebrow from "@/components/ui/Eyebrow";
-import HeroSequence from "@/components/ui/HeroSequence";
 import { images, type ImageKey } from "@/content/images";
 
 /**
@@ -16,7 +15,7 @@ export default async function PageHero({
   title,
   lead,
   imageKey = "hero",
-  imagePriority = false,
+  imagePriority = true,
   secondary = { href: "/collection", label: null },
 }: {
   eyebrow: string;
@@ -55,7 +54,7 @@ export default async function PageHero({
       <div aria-hidden="true" className="absolute inset-0 bg-navy-700/80" />
 
       <div className="container-content relative py-20 text-center lg:py-28">
-        <HeroSequence className="mx-auto max-w-3xl">
+        <div className="hero-seq mx-auto max-w-3xl">
           <Eyebrow tone="cream" className="justify-center">
             {eyebrow}
           </Eyebrow>
@@ -77,7 +76,7 @@ export default async function PageHero({
               </Button>
             ) : null}
           </div>
-        </HeroSequence>
+        </div>
       </div>
     </section>
   );

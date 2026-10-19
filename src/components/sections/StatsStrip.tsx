@@ -1,8 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import Section from "@/components/ui/Section";
+import CountUp from "@/components/ui/CountUp";
 import { catalogue } from "@/content/catalogue";
 import { serviceAreas } from "@/content/areas";
-import { formatPrice } from "@/lib/format";
 
 export default async function StatsStrip() {
   const t = await getTranslations("home.stats");
@@ -10,16 +10,11 @@ export default async function StatsStrip() {
   const fromMinor = Math.min(
     ...catalogue.map((item) => item.price.amountMinor ?? Number.POSITIVE_INFINITY),
   );
-  const fromPrice = formatPrice({
-    type: "fixed",
-    amountMinor: fromMinor,
-    currency: "ZAR",
-  });
 
   const stats = [
-    { value: String(catalogue.length), label: t("options") },
-    { value: String(serviceAreas.length), label: t("areas") },
-    { value: fromPrice, label: t("fromLabel") },
+    { value: catalogue.length, prefix: "", label: t("options") },
+    { value: serviceAreas.length, prefix: "", label: t("areas") },
+    { value: Math.round(fromMinor / 100), prefix: "R", label: t("fromLabel") },
   ];
 
   return (
@@ -37,7 +32,7 @@ export default async function StatsStrip() {
               {stat.label}
             </dt>
             <dd className="mt-2 font-display text-4xl text-ink sm:text-5xl">
-              {stat.value}
+              <CountUp value={stat.value} prefix={stat.prefix} />
             </dd>
           </div>
         ))}
