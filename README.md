@@ -5,10 +5,11 @@ Marketing website for Lana Luxe Events (soft play, jumping castles, party fun, p
 ## Quick start
 
 ```bash
-npm install
-cp .env.local .env.local   # copy .env.example and fill in values
+npm ci
 npm run dev                # http://localhost:3000
 ```
+
+For local configuration, copy `.env.example` to `.env.local` and fill in the values.
 
 ## Scripts
 
@@ -69,7 +70,7 @@ Brand assets in `public/brand/` are pre-generated. `scripts/generate-brand.mjs` 
 
 The build is a standard Next.js production build — any host that can run Node.js works, and the usual Next.js platforms need no special configuration.
 
-**Vercel / Netlify**: import the repository; framework auto-detection is enough. Set the environment variables above in the project settings (the site URL must match the deployment domain).
+**Vercel / Netlify**: import the repository and let the platform detect Next.js. Use `npm run build` as the build command; do not configure a static export/publish directory. Set the environment variables above in the project settings (the site URL must match the deployment domain).
 
 **Any Node host (VPS, cPanel with Node, etc.)**:
 
