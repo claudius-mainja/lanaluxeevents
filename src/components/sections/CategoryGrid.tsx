@@ -5,18 +5,19 @@ import { Link } from "@/i18n/navigation";
 import Section from "@/components/ui/Section";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/ui/Reveal";
-import { images, type ImageKey } from "@/content/images";import {
+import { images, type ImageKey } from "@/content/images";
+import {
   categories,
   categoryLabelKey,
   type CategoryId,
 } from "@/content/catalogue";
 
 const cardImages: Record<CategoryId, ImageKey> = {
-  "soft-play": "hero",
-  "jumping-castles": "whiteDomeCastle",
-  "party-fun": "stockCandyCart",
+  "soft-play": "softPlayAndCastle",
+  "jumping-castles": "jumpingCastle",
+  "party-fun": "partyFun",
   packages: "kidsCombo",
-  "bubble-house": "bubbleHouse",
+  "bubble-house": "bubbleHouseCategory",
   "nursery-decor": "babyShower",
 };
 
