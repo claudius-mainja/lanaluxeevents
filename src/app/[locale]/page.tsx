@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";/
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { ArrowRight } from "lucide-react";
